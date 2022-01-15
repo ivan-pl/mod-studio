@@ -1,2 +1,2 @@
-# otus-html-css
-Project from the Otus HTML/CSS course.
+# Mod Studio
+Website of the Modern Web Studio.
