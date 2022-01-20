@@ -1,0 +1,35 @@
+/*Первым делом необходимо ресетнуть стили, чтобы на всех браузерах отображалось одинаково. 
+Для этого использую HTML5Doctor v1.6.1, удаляя из него все, на мой взгляд, ненужное (по большей части поудалял неиспользуемые мной теги).*/
+
+html, body, span, h1, p,
+b, i, ul, li, article, footer, nav{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+body {
+line-height:1;
+}
+
+article,footer,nav {
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+  
