@@ -1,3 +1,5 @@
+
+
 /*Первым делом необходимо ресетнуть стили, чтобы на всех браузерах отображалось одинаково. 
 Для этого использую HTML5Doctor v1.6.1, удаляя из него все, на мой взгляд, ненужное (по большей части поудалял неиспользуемые мной теги).*/
 
@@ -32,4 +34,23 @@ vertical-align:baseline;
 background:transparent;
 }
 
-  
+/*Начинаю писать свои стили.*/
+/*Задаю фон для отображения листа А4*/
+body {
+    background-color: darkgrey;
+}
+
+/*Делаю что-то похожее на лист А4*/
+main {
+    background-color: whitesmoke;
+    width: 21cm;
+    margin: 5mm auto 5mm auto;
+    padding: 30mm 25mm 30mm 25mm;   
+    border: 1px solid black;  
+}
+
+
+
+.underline {
+    text-decoration: underline;
+  }
