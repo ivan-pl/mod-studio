@@ -1,37 +1,35 @@
-
-
 /*Первым делом необходимо ресетнуть стили, чтобы на всех браузерах отображалось одинаково. 
 Для этого использую HTML5Doctor v1.6.1, удаляя из него все, на мой взгляд, ненужное (по большей части поудалял неиспользуемые мной теги).*/
 
 html, body, span, h1, p,
 b, i, ul, li, article, footer, nav{
-margin:0;
-padding:0;
-border:0;
-outline:0;
-font-size:100%;
-vertical-align:baseline;
-background:transparent;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 body {
-line-height:1;
+    line-height:1;
 }
 
 article,footer,nav {
-display:block;
+    display:block;
 }
 
 nav ul {
-list-style:none;
+    list-style:none;
 }
 
 a {
-margin:0;
-padding:0;
-font-size:100%;
-vertical-align:baseline;
-background:transparent;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 /*Начинаю писать свои стили.*/
@@ -47,9 +45,26 @@ main {
     margin: 5mm auto 5mm auto;
     padding: 30mm 25mm 30mm 25mm;   
     border: 1px solid black;  
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+article {
+    margin-bottom: 2rem;
+}
 
+h1 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.15rem;
+    margin-top: 1.15rem;
+    margin-bottom: 1.15rem;
+    text-align: justify;
+    font-size: 1rem;
+}
 
 .underline {
     text-decoration: underline;
