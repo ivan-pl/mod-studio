@@ -63,7 +63,7 @@ nav ul {
     list-style-type: disc;
 }
 
-h1 {
+h1, h2 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.15rem;
     font-weight: bold;
@@ -76,7 +76,3 @@ p {
     text-align: justify;
     font-size: 1rem;
 }
-
-.underline {
-    text-decoration: underline;
-  }
