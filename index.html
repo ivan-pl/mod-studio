@@ -1,9 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="utf-8">
+        <title>Mod Studio</title>
     </head>
     <body>
-
+        <!-- Представляем, что сайт это книга. Меню сайта - это содержание, оно должно находится в header, отдельные главы должны соответствовать section -->
+        <header>
+            <nav>
+                <a href="#">Main page</a>
+                <a href="#">Biography</a>
+                <a href="#">Designers</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Strong points</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Каждый раздел из nav по смыслу представляет собой отдельную секцию -->
+            <section>
+                <h1>Mod Studio</h1>
+                <h2>Modern Web Studio</h2>
+                <img src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The dooway and the flower pot">
+            </section>
+            <section>
+                <h2>Katya Mills</h2>
+                <h3>Art Director</h3>
+                <img src="https://images.unsplash.com/photo-1490505658643-e96d613eb642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The girl walks barefoot on the sand">
+                <ul>
+                    <li>Styling</li>
+                    <li>Scenography</li>
+                    <li>Creative Photography</li>
+                    <li>Design</li>
+                </ul>
+                <blockquote cite="#">
+                    The more I deal with the work as something that is my own, as something that is personal, the more successful it is.
+                </blockquote>
+            </section>
+            <section>
+                <h2>Designers</h2>
+                <!-- Фото и текст под ним считаю одним объектом. Таких объектов несколько, поэтому выделяю их в article -->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1459201062043-6f30fd792f08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="The girl on the background of the field looks into the distance">
+                    <figcaption>
+                        <h3>JESS WONDER</h3>
+                        <p>From/ be more flower</p>
+                        <p>Skills/ Design Strategy/ Marketing</p>    
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1507831041068-539748fc3c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="The man holding the folder">
+                    <figcaption>
+                        <h3>KAMERON CLEIN</h3>
+                        <p>From/ be more flower</p>
+                        <p>Skills/ Design Strategy/ Marketing</p> 
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1531346724132-8e2e298435e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The man holding the folder and a glass of coffee">
+                    <figcaption>
+                        <h3>LOUISSE RED</h3>
+                        <p>From/ be more flower</p>
+                        <p>Skills/ Design Strategy/ Marketing</p> 
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Testimonials</h2>
+                <!-- Отзыв принимаю за отдельный элемент в рамках секции, содержащий текст и картинку -->
+                <article>
+                    <img src="https://images.unsplash.com/photo-1603306009000-96fd2a39d0b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Man with a package">
+                    <blockquote>
+                        I just really want to do good work and work with some great people, people who challange me.
+                    </blockquote>
+                </article>
+                <!-- Картинка с подписями является сторонней и не относится к основному контенту в этой секции, поэтому выношу их в aside-->
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="The bar in the cafe">
+                    <a href="www.whitepapers.com">Creativity www.whitepapers.com</a>
+                    <a href="www.whitepapers.com">Creativity www.whitepapers.com</a>
+                    <a href="www.whitepapers.com">Creativity www.whitepapers.com</a>
+                <figure>
+            </section>
+            <section>
+                <h2>Strong points</h2>
+                <!--Галерею с картинками считаю отдельным объектом. Ссылок на другие картинки в макете нет, поэтому копипаст одной, чтобы показать разметку страницы-->
+                <article>
+                    <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The room with modern furniture">
+                    <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The room with modern furniture">
+                    <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The room with modern furniture">
+                    <!--Список c заголовком необходимо сделать отдельным объектом. Наиболее подъодящим, на мой взгляд, является article-->
+                    <article>
+                        <h3>Strength</h3>
+                        <ul>
+                            <li>Interiors</li>
+                            <li>Outdoors</li>
+                            <li>Portraits</li>
+                            <li>Styling</li>
+                            <li>Events</li>
+                            <li>Architecture</li>
+                            <li>Design</li>
+                            <li>Celebrations</li>
+                            <li>Artistic</li>
+                            <li>Fashion</li>
+                            <li>Nature</li>
+                            <li>Creativity</li>
+                        </ul>
+                    </article>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
