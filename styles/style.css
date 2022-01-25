@@ -1,0 +1,26 @@
+/*Т.к. буду исопльзовать rem, то задаю font-size в явном виде*/
+:root {
+    font-size: 16px;
+}
+
+/*На первом этапе необходимо ресентнуть стили. Использую normalize.css v.8.0.1. Поудалял все связанное с IE, т.к. он не используется, а также
+стили тех тегов, которых в index.html нет*/
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+b {
+    font-weight: bolder;
+}
+ 
