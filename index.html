@@ -4,40 +4,49 @@
         <meta charset="utf-8">
         <title>Mod Studio</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     </head>
     <body>
         <!-- Представляем, что сайт это книга. Меню сайта - это содержание, оно должно находится в header, отдельные главы должны соответствовать section -->
         <header>
             <nav>
-                <a href="#">Main page</a>
-                <a href="#">Biography</a>
-                <a href="#">Designers</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Strong points</a>
+                <a href="#main-page">Main page</a>
+                <a href="#biography">Biography</a>
+                <a href="#designers">Designers</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#strong-points">Strong points</a>
             </nav>
         </header>
         <main>
             <!-- Каждый раздел из nav по смыслу представляет собой отдельную секцию -->
-            <section>
-                <h1>Mod Studio</h1>
-                <h2>Modern Web Studio</h2>
-                <img src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The dooway and the flower pot">
+            <section id="main-page">
+                <div class="main-heading">
+                    <div class="main-title">
+                        <h1>Mod Studio</h1>
+                        <h2>Modern Web Studio</h2>
+                    </div>
+                    <img class="main-image" src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The dooway and the flower pot">
+                </div>
             </section>
-            <section>
-                <h2>Katya Mills</h2>
-                <h3>Art Director</h3>
-                <img src="https://images.unsplash.com/photo-1490505658643-e96d613eb642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The girl walks barefoot on the sand">
-                <ul>
-                    <li>Styling</li>
-                    <li>Scenography</li>
-                    <li>Creative Photography</li>
-                    <li>Design</li>
-                </ul>
-                <blockquote cite="#">
-                    The more I deal with the work as something that is my own, as something that is personal, the more successful it is.
-                </blockquote>
+            <section id="biography" class="biography">
+                <h2>Biography</h2>
+                <img class="biography-image" src="https://images.unsplash.com/photo-1490505658643-e96d613eb642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The girl walks barefoot on the sand">
+                <div class="biography-text">
+                    <h3>Katya<br>Mills</h3>
+                    <h4>Art Director</h4>
+                    <ul>
+                        <li>Styling</li>
+                        <li>Scenography</li>
+                        <li>Creative Photography</li>
+                        <li>Design</li>
+                    </ul>
+                    <hr>
+                    <blockquote cite="#">
+                        The more I deal with the work as something that is my own, as something that is personal, the more successful it is.
+                    </blockquote>
+                </div>
             </section>
-            <section>
+            <section id="designers">
                 <h2>Designers</h2>
                 <!-- Фото и текст под ним считаю одним объектом. Таких объектов несколько, поэтому выделяю их в article -->
                 <figure>
@@ -65,7 +74,7 @@
                     </figcaption>
                 </figure>
             </section>
-            <section>
+            <section id="testimonials">
                 <h2>Testimonials</h2>
                 <!-- Отзыв принимаю за отдельный элемент в рамках секции, содержащий текст и картинку -->
                 <article>
@@ -82,7 +91,7 @@
                     <a href="www.whitepapers.com">Creativity www.whitepapers.com</a>
                 <figure>
             </section>
-            <section>
+            <section id="strong-points">
                 <h2>Strong points</h2>
                 <!--Галерею с картинками считаю отдельным объектом. Ссылок на другие картинки в макете нет, поэтому копипаст одной, чтобы показать разметку страницы-->
                 <article>
