@@ -3,62 +3,76 @@
 }
 
 * {
-    max-width: 1440px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Прячем навигацию */
+header {
+    display: none;
 }
 
 body {
     background-color: white;
 }
 
-header {
-    display: none;
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 section {
     display: block;
-    box-sizing: border-box;
-    padding: 0rem;
-    margin: 0rem 0rem 6rem 0rem;
+    height: 100vh;
+    min-width: 50rem;
 }
 
-
-/*Стилизуем Main page*/
-.main-heading {
-    position: relative;
+/* Стилизуем сектор Main page */
+.main-image {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 70%;
+    height: 74%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 .main-title {
     display: block;
-    box-sizing: border-box;
-    background-color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
+    background-color: white;
+    font-size: 5rem;
+    width: 35rem;
+    height: 22rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
     text-align: center;
 }
 
 .main-title h1 {
-    font-size: 5rem;
-    margin-top: 6rem;
+    position: relative;
+    white-space: nowrap;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    margin: 0;
 }
 
 .main-title h2 {
-    font-size: 1.5rem;
-    font-family: "Roboto";
-}
-
-.main-image {
     display: block;
-    box-sizing: content-box;
-    width: 1065px;
-    height: 630px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    font-size: 0.3em;
+    top: 45%;
+    font-family: "Roboto";
+    margin: 0;
 }
 
 /*Biography*/
