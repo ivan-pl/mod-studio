@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* Прячем навигацию */
@@ -60,7 +60,9 @@ section {
     white-space: nowrap;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: 'Butler', sans-serif;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -68,8 +70,7 @@ section {
     display: block;
     position: relative;
     font-size: 0.3em;
-    top: 45%;
-    font-family: "Roboto";
+    top: 37%;
     font-weight: bold;
     margin: 0;
 }
@@ -172,6 +173,7 @@ section {
     content: close-quote;
 }
 
-section:nth-child(n+2) {
+/* Заглушка для отключений ненужных секций */
+/* section:nth-child(n+2) {
     display: none;
-}
+} */
