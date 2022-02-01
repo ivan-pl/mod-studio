@@ -16,13 +16,11 @@ body {
     background-color: white;
 }
 
-main {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 section {
     display: block;
+    max-width: 1440px;
+    min-height: 600px;
+    margin: 0 auto;
     height: 100vh;
     min-width: 50rem;
 }
@@ -32,13 +30,13 @@ section {
     display: block;
     position: absolute;
     object-fit: cover;
-    width: 70%;
-    height: 74%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
+    max-height: 630px;
+	height: 60vw;
 }
 
 .main-title {
@@ -72,6 +70,7 @@ section {
     font-size: 0.3em;
     top: 45%;
     font-family: "Roboto";
+    font-weight: bold;
     margin: 0;
 }
 
@@ -171,4 +170,8 @@ section {
 
 .biography-text blockquote::after {
     content: close-quote;
+}
+
+section:nth-child(n+2) {
+    display: none;
 }
