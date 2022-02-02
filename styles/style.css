@@ -18,11 +18,12 @@ body {
 
 section {
     display: block;
+    position: relative;
     max-width: 1440px;
     min-height: 600px;
     margin: 0 auto;
     height: 100vh;
-    min-width: 50rem;
+    text-align: center;
 }
 
 /* Стилизуем сектор Main page */
@@ -44,7 +45,7 @@ section {
     position: absolute;
     background-color: white;
     font-size: 5rem;
-    width: 35rem;
+    width: 33rem;
     height: 22rem;
     top: 0;
     right: 0;
@@ -60,7 +61,7 @@ section {
     white-space: nowrap;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-family: 'Butler', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -69,10 +70,21 @@ section {
 .main-title h2 {
     display: block;
     position: relative;
-    font-size: 0.3em;
+    font-size: 0.25em;
     top: 37%;
     font-weight: bold;
     margin: 0;
+}
+
+.caption {
+    display: inline-block;
+    position: absolute;
+    bottom: 3%;
+    right: 37%;
+    font-size: 1.15rem;
+    font-weight: 300;
+    font-family: 'Butler', sans-serif;
+    color: #8C8888;
 }
 
 /*Biography*/
