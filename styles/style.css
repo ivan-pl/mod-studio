@@ -5,6 +5,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Прячем навигацию */
@@ -20,13 +21,14 @@ section {
     display: block;
     position: relative;
     max-width: 1440px;
-    min-height: 600px;
+    min-height: 700px;
+    max-height: 1080px;
     margin: 0 auto;
     height: 100vh;
     text-align: center;
 }
 
-/* Стилизуем сектор Main page */
+/* section main-page */
 .main-image {
     display: block;
     position: absolute;
@@ -76,10 +78,10 @@ section {
     margin: 0;
 }
 
-.caption {
+.caption-bottom {
     display: inline-block;
     position: absolute;
-    bottom: 3%;
+    bottom: 6%;
     right: 37%;
     font-size: 1.15rem;
     font-weight: 300;
@@ -87,20 +89,41 @@ section {
     color: #8C8888;
 }
 
-/*Biography*/
-.biography-image {
+/*section biography*/
+.biography-image, .biography-text {
     display: inline-block;
-    box-sizing: border-box;
-    width: 553px;
-    height: 840px;
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+    float: left;
 }
 
-.biography {
+.biography-image  img {
     display: block;
-    box-sizing: content-box;
-    padding-left: 8rem;
-    padding-right: 8rem;
     position: relative;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.biography-text {
+    width: 80%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.biography-text h3 {
+    font-size: 6rem; 
+    margin-bottom: 2rem;  
+    font-family: 'Butler';
+    font-weight: 300;
 }
 
 .biography h2 {
@@ -110,29 +133,14 @@ section {
     font-family: "Roboto";
     font-size: 1.5rem;
     font-weight: bold;
-    transform: rotate(-90deg); 
-    right: 8%;
     bottom: 5%;
-}
-
-.biography-text {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 550px;
-    padding-top: 5rem;
-    padding-left: 5rem;
-    text-align: left;
-    vertical-align: top;
-}
-
-.biography-text h3 {
-    font-size: 6rem; 
-    margin-bottom: 2rem;   
+    right: 0;
+    transform: rotate(-90deg); 
 }
 
 .biography-text h4 {
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 500;
     margin-bottom: 0px;
     font-family: "Roboto";
     color: #636363;
@@ -143,7 +151,7 @@ section {
     margin-top: 0px;
     margin-bottom: 4rem;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Roboto";
     color: #636363;
 }
@@ -162,18 +170,11 @@ section {
 }
 
 .biography-text blockquote {
-    margin-left: 0px;
+    margin-left: 0;
+    margin-right: 5rem;
     font-size: 2rem;
-}
-
-.biography-text hr {
-    height: 0.3rem;
-    width: 1rem;
-    background-color: black;
-    margin-left: 0px;
-}
-
-.biography-text blockquote {
+    font-family: 'Butler';
+    font-weight: 200;
     quotes: "“" "”";
 }
 
@@ -185,7 +186,25 @@ section {
     content: close-quote;
 }
 
+.biography-text hr {
+    height: 0.3rem;
+    width: 1rem;
+    background-color: black;
+    margin-left: 0px;
+}
+
+.caption-top {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 37%;
+    font-size: 1.15rem;
+    font-weight: 300;
+    font-family: 'Butler', sans-serif;
+    color: #8C8888;
+}
+
 /* Заглушка для отключений ненужных секций */
-/* section:nth-child(n+2) {
+section:nth-child(n+3) {
     display: none;
-} */
+}
