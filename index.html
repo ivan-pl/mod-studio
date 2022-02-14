@@ -6,10 +6,9 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@400;500;700&display=swap">
     </head>
     <body>
-        <!-- Представляем, что сайт это книга. Меню сайта - это содержание, оно должно находится в header, отдельные главы должны соответствовать section -->
         <header>
             <nav>
                 <a href="#main-page">Main page</a>
@@ -20,18 +19,20 @@
             </nav>
         </header>
         <main>
-            <!-- Каждый раздел из nav по смыслу представляет собой отдельную секцию -->
-            <section id="main-page">
+            <section id="main-page" class="main-page">
                 <div class="main-title">
                     <h1>Atlas Studio</h1>
                     <h2>Modern Web Studio</h2>
                 </div>
                 <img class="main-image" src="images/main-image.jpg" alt="The dooway and the flower pot">
-                <div class="caption">&mdash; Creative studio</div>
+                <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
             </section>
             <section id="biography" class="biography">
                 <h2>Biography</h2>
-                <img class="biography-image" src="https://images.unsplash.com/photo-1490505658643-e96d613eb642?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="The girl walks barefoot on the sand">
+                <!-- <div class="caption-top">&mdash; Creative studio</div> -->
+                <div class="biography-image">
+                    <img src="images/biography-image.jpg" alt="The girl walks barefoot on the sand">
+                </div>
                 <div class="biography-text">
                     <h3>Katya<br>Mills</h3>
                     <h4>Art Director</h4>
@@ -46,6 +47,7 @@
                         The more I deal with the work as something that is my own, as something that is personal, the more successful it is.
                     </blockquote>
                 </div>
+                <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
             </section>
             <section id="designers">
                 <h2>Designers</h2>
