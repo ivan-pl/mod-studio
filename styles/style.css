@@ -30,6 +30,7 @@ section {
     text-align: center;
 }
 
+
 /* section main-page */
 .main-image {
     position: absolute;
@@ -88,6 +89,7 @@ section {
     font-family: 'Butler', sans-serif;
     color: #8C8888;
 } */
+
 
 /*section biography*/
 .biography-image, .biography-text {
@@ -201,9 +203,47 @@ section {
     content: "";
     display: block;
     clear: both;
-  }
+}
+
+
+/*section designers*/
+
+section.designers h2 {
+    display: none;
+}
+
+section.designers .flex-container {
+    display: flex;
+    height: 80%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+section.designers .flex-container figure figcaption {
+    display: inline-block;
+    text-align: left;
+}
+
+section.designers .flex-container figure{
+    text-align: left;
+}
+
+/*first image*/
+section.designers .flex-container figure:first-child {
+    margin-left: 0;
+}
+
+section.designers .flex-container figure:first-child figcaption{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: blueviolet;
+}
+
 
 /* Заглушка для отключений ненужных секций */
-section:nth-child(n+3) {
+section:nth-child(n+4) {
     display: none;
 }
