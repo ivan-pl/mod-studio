@@ -234,12 +234,27 @@ section.designers .flex-container figure:first-child {
     margin-left: 0;
 }
 
-section.designers .flex-container figure:first-child figcaption{
+section.designers .flex-container figure:first-child figcaption {
     display: inline-block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: blueviolet;
+}
+
+section.designers figcaption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section.designers h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+span.bold {
+    font-weight: 700;
 }
 
 
