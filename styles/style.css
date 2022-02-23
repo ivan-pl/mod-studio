@@ -201,9 +201,69 @@ section {
     content: "";
     display: block;
     clear: both;
-  }
+}
+
+
+/*section testimonials*/
+
+.testimonials h2 {
+    display: none;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 7rem 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "anchor1 left-image quote"
+    "anchor2 left-image right-image"
+    "anchor3 left-image right-image";
+}
+
+.anchor-vertical a { 
+    display: block;
+    position: relative;
+    text-align: left;
+    transform: rotate(-90deg);
+    top: 50%;
+}
+
+.anchor-vertical:nth-of-type(1) {
+    grid-area: anchor1;    
+}
+
+.anchor-vertical:nth-of-type(2) {
+    grid-area: anchor2;    
+}
+
+.anchor-vertical:nth-of-type(3) {
+    grid-area: anchor3;    
+}
+
+.left-image {
+    grid-area: left-image;
+}
+
+.right-image {
+    grid-area: right-image;
+}
+
+.testimonials blockquote {
+    grid-area: quote;
+}
+
+.testimonials img {
+    width: 10rem;
+    height: 10rem;
+}
+
+
 
 /* Заглушка для отключений ненужных секций */
-section:nth-child(n+3) {
+section:nth-child(3) {
+    display: none;
+}
+
+section:nth-child(n+5) {
     display: none;
 }
