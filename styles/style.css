@@ -102,6 +102,9 @@ section {
     position: relative;
     width: 80%;
     height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
     overflow: hidden;
     left: 0;
     right: 0;
@@ -125,7 +128,7 @@ section {
 .biography h2 {
     position: absolute;
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     bottom: 5%;
     right: 0;
@@ -187,6 +190,7 @@ section {
     margin-left: 0;
 }
 
+
 /* .caption-top {
     position: absolute;
     top: 10%;
@@ -207,7 +211,12 @@ section {
 /*section testimonials*/
 
 .testimonials h2 {
-    display: none;
+    position: absolute;
+    left: 12.5rem;
+    top: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .testimonials {
@@ -215,9 +224,12 @@ section {
     grid-template-columns: 7rem 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "anchor1 left-image quote"
-    "anchor2 left-image right-image"
-    "anchor3 left-image right-image";
+        "anchor1 left-image quote"
+        "anchor2 left-image right-image"
+        "anchor3 left-image right-image";
+    padding-top: 8rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5.5rem;
 }
 
 .anchor-vertical a { 
@@ -226,6 +238,11 @@ section {
     text-align: left;
     transform: rotate(-90deg);
     top: 50%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .anchor-vertical:nth-of-type(1) {
@@ -242,22 +259,40 @@ section {
 
 .left-image {
     grid-area: left-image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    padding-right: 7rem;
 }
 
 .right-image {
     grid-area: right-image;
+    width: 16rem;
+    height: auto;
+    max-height: 100%;
+    justify-self: center;
+    align-self: start;
+    object-fit: cover;
+    object-position: center center;
+
 }
 
 .testimonials blockquote {
     grid-area: quote;
+    font-family: 'Butler', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    width: 13rem;
+    margin: 0;
+    padding-bottom: 5%;
+    justify-self: center;
+    align-self: start;
 }
 
-.testimonials img {
-    width: 10rem;
-    height: 10rem;
+.bold {
+    font-weight: 700;
 }
-
-
 
 /* Заглушка для отключений ненужных секций */
 section:nth-child(3) {
