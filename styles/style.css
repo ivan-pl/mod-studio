@@ -24,11 +24,12 @@ main {
 
 section {
     position: relative;
-    min-height: 44rem;
+    min-height: 47rem;
     max-height: 68rem;
     height: 100vh;
     text-align: center;
 }
+
 
 /* section main-page */
 .main-image {
@@ -89,6 +90,7 @@ section {
     color: #8C8888;
 } */
 
+
 /*section biography*/
 .biography-image, .biography-text {
     position: relative;
@@ -128,10 +130,10 @@ section {
 .biography h2 {
     position: absolute;
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: bold;
     bottom: 5%;
-    right: 0;
+    right: 3rem;
     transform: rotate(-90deg); 
 }
 
@@ -168,7 +170,7 @@ section {
 
 .biography-text blockquote {
     margin-left: 0;
-    margin-right: 5rem;
+    margin-right: 6rem;
     font-size: 2rem;
     font-family: 'Butler', sans-serif;
     font-weight: 200;
@@ -208,8 +210,79 @@ section {
 }
 
 
-/*section testimonials*/
+/*section designers*/
+.designers h2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 1.15rem;
+    right: 26%;
+    top: 13%;
+}
 
+.designers .flex-container {
+    display: flex;
+    height: 75%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 2%;
+    position: relative;
+    top: 12%;
+    padding-right: 5rem;
+}
+
+.designers .flex-container figure {
+    text-align: left;
+    margin: 0;
+    height: 100%;
+    flex: 1 1 10%;
+}
+
+.designers .flex-container figure img {
+    display: block;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.designers .flex-container figure figcaption {
+    max-height: 20%;
+}
+
+.designers .flex-container figure:first-child {
+    flex: 2 1 20%;
+    margin-right: 7%;
+}
+
+.designers .flex-container figure:first-child img {
+    height: 80%;
+}
+
+.designers .flex-container figure:first-child figcaption {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.designers figcaption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.designers h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+
+/*section testimonials*/
 .testimonials h2 {
     grid-area: header;
     font-family: "Roboto", sans-serif;
@@ -300,7 +373,7 @@ section {
     width: 1440px;
     height: 4559px;
     position: absolute;
-    top: -900px;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -310,10 +383,6 @@ section {
 }
 
 /* Заглушка для отключений ненужных секций */
-section:nth-child(3) {
-    display: none;
-}
-
 section:nth-child(n+5) {
     display: none;
 }
