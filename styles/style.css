@@ -104,6 +104,9 @@ section {
     position: relative;
     width: 80%;
     height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
     overflow: hidden;
     left: 0;
     right: 0;
@@ -188,6 +191,7 @@ section {
     background-color: black;
     margin-left: 0;
 }
+
 
 /* .caption-top {
     position: absolute;
@@ -277,6 +281,87 @@ section {
     margin-top: 1.5rem;
 }
 
+
+/*section testimonials*/
+.testimonials h2 {
+    grid-area: header;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    justify-self: start;
+    align-self: end;
+    padding-bottom: 7%;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 12% 1fr 1fr;
+    grid-template-rows: 16% repeat(3, 1fr);
+    grid-template-areas: 
+        ". header ."
+        "flex-container left-image quote"
+        "flex-container left-image right-image"
+        "flex-container left-image right-image";
+}
+
+.testimonials .flex-container {
+    grid-area: flex-container;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: end;
+    padding-right: 21%;
+    padding-top: 8%;
+}
+
+.testimonials .flex-container a { 
+    text-align: left;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    flex: 0 1 11rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.left-image {
+    grid-area: left-image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    padding-right: 17%;
+}
+
+.right-image {
+    grid-area: right-image;
+    width: 14rem;
+    height: auto;
+    max-height: 100%;
+    justify-self: start;
+    align-self: start;
+    object-fit: cover;
+    object-position: center center;
+    margin-left: 29%;
+    margin-top: 1%;
+}
+
+.testimonials blockquote {
+    grid-area: quote;
+    font-family: 'Butler', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    width: 13rem;
+    margin: 0;
+    margin-left: 30%;
+    padding-bottom: 5%;
+    justify-self: start;
+    align-self: start;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -298,6 +383,6 @@ section {
 }
 
 /* Заглушка для отключений ненужных секций */
-section:nth-child(n+4) {
+section:nth-child(n+5) {
     display: none;
 }
