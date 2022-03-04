@@ -367,6 +367,57 @@ section {
 }
 
 
+/* section strong-points */
+.strong-points h2, h3 {
+    display: none;
+}
+
+.strong-points .flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 2%;
+    align-items: flex-end;
+    height: 59%;
+    position: relative;
+    top: 30%;
+}
+
+.strong-points img {
+    flex: 1 0 24%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    overflow: hidden;
+}
+
+.strong-points article img:nth-child(1) {
+    order: 1;
+}
+
+.strong-points article img:nth-child(2) {
+    order: 2;
+}
+
+.strong-points article img:nth-child(3) {
+    order: 4;
+    flex: 0 0 20%;
+}
+
+.strong-points ul {
+    order: 3;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    text-align: left;
+    flex: 1 0 50%;
+}
+
+
 /* Наложение макета */
 .layout-check {
     display: none;
@@ -383,6 +434,6 @@ section {
 }
 
 /* Заглушка для отключений ненужных секций */
-section:nth-child(n+5) {
+/* section:nth-child(n+5) {
     display: none;
-}
+} */
