@@ -282,36 +282,35 @@ section {
 
 
 /*section testimonials*/
+.testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
 .testimonials h2 {
-    grid-area: header;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 12.5%;
+    padding-bottom: 3%;
     margin: 0;
-    justify-self: start;
-    align-self: end;
-    padding-bottom: 7%;
-}
-
-.testimonials {
-    display: grid;
-    grid-template-columns: 12% 1fr 1fr;
-    grid-template-rows: 16% repeat(3, 1fr);
-    grid-template-areas: 
-        ". header ."
-        "flex-container left-image quote"
-        "flex-container left-image right-image"
-        "flex-container left-image right-image";
 }
 
 .testimonials .flex-container {
-    grid-area: flex-container;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: end;
-    padding-right: 21%;
-    padding-top: 8%;
+    width: 12%;
+    padding-right: 2.5%;
+    order: 1;
 }
 
 .testimonials .flex-container a { 
@@ -327,38 +326,88 @@ section {
 }
 
 .left-image {
-    grid-area: left-image;
-    width: 100%;
-    height: 100%;
+    width: 36%;
+    height: 84%;
     object-fit: cover;
     object-position: center center;
-    padding-right: 17%;
+    order: 2;
 }
 
-.right-image {
-    grid-area: right-image;
-    width: 14rem;
-    height: auto;
-    max-height: 100%;
-    justify-self: start;
-    align-self: start;
-    object-fit: cover;
-    object-position: center center;
-    margin-left: 29%;
-    margin-top: 1%;
+.flex-container-right {
+    display: flex;
+    flex-flow: nowrap column;
+    order: 3;
+    align-self: center;
+    margin: auto;
+    padding-left: 5%;
+    padding-bottom: 12%;
 }
 
 .testimonials blockquote {
-    grid-area: quote;
     font-family: 'Butler', sans-serif;
     font-weight: 200;
     font-size: 2rem;
     width: 13rem;
-    margin: 0;
-    margin-left: 30%;
-    padding-bottom: 5%;
     justify-self: start;
     align-self: start;
+    margin: 0;
+}
+
+.right-image {
+    width: 14rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    margin: auto;
+    padding-top: 16%;
+}
+
+@supports (display: grid) {
+    .testimonials h2 {
+        display: block;
+        width: auto;
+        height: auto;
+        grid-area: header;
+        justify-self: start;
+        align-self: end;
+        padding-bottom: 7%;
+        padding-left: 0;
+    }
+    
+    .testimonials {
+        display: grid;
+        grid-template-columns: 12% 1fr 1fr;
+        grid-template-rows: 16% repeat(3, 1fr);
+        grid-template-areas: 
+            ". header ."
+            "flex-container left-image flex-container-right"
+            "flex-container left-image flex-container-right"
+            "flex-container left-image flex-container-right";
+    }
+
+    .flex-container-right {
+        grid-area: flex-container-right;
+        padding-left: 0;
+        padding-right: 7%;
+        padding-bottom: 19%;
+    }
+
+    .flex-container-right blockquote {
+        margin-left: 4%;
+    }
+    
+    .testimonials .flex-container {
+        grid-area: flex-container;
+        justify-self: end;
+        padding-right: 22%;
+    }
+        
+    .left-image {
+        grid-area: left-image;
+        width: 100%;
+        height: 100%;
+        padding-right: 17%;
+    }   
 }
 
 .bold {
