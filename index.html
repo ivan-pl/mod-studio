@@ -27,8 +27,10 @@
                     <h1>Atlas Studio</h1>
                     <h2>Modern Web Studio</h2>
                 </div>
-                <img class="main-image" src="images/main-image.jpg" alt="The dooway and the flower pot">
-                <img class="main-image-m" src="images/main-image-mobile.jpg" alt="The dooway and the flower pot">
+                <picture class="main-image"> 
+                    <source srcset="images/main-image-mobile.jpg" media="(max-width: 700px)">
+                    <img class="main-image" src="images/main-image.jpg" alt="The dooway and the flower pot">
+                </picture>
                 <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
             </section>
             <section id="biography" class="biography">
@@ -38,7 +40,7 @@
                     <img src="images/biography-image.jpg" alt="The girl walks barefoot on the sand">
                 </div>
                 <div class="biography-text">
-                    <h3>Katya<br>Mills</h3>
+                    <h3>Katya <br>Mills</h3>
                     <h4>Art Director</h4>
                     <ul>
                         <li>Styling</li>

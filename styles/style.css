@@ -44,10 +44,6 @@ section {
 	height: 60vw;
 }
 
-.main-image-m {
-    display: none;
-}
-
 .main-title {
     position: absolute;
     background-color: white;
@@ -392,6 +388,11 @@ section:nth-child(n+5) {
 
 
 @media (max-width: 700px) {
+    section {
+        min-width: 22.5rem;
+    }
+
+    /* section main-page */
     .main-title {
         top: 0;
         margin: 0;
@@ -409,10 +410,6 @@ section:nth-child(n+5) {
     }
 
     .main-image {
-        display: none;
-    }
-
-    .main-image-m {
         display: block;
         height: 100%;
         width: 100%;
@@ -422,6 +419,49 @@ section:nth-child(n+5) {
         object-position: bottom center;
     }
 
+    /* section biography */
+    .biography h2 {
+        transform: none;
+        top: 0;
+        right: 0;
+        bottom: unset;
+        margin: 0;
+    }
+
+    .biography-text h3 {
+        white-space: nowrap;
+        font-size: 4.875rem;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 50%;
+        margin: 0 auto;
+    }
+
+    .biography br {
+        display: none;
+    }
+
+    .biography h3 {
+        content: "asds";
+    }
+
+    .biography blockquote {
+        display: none;
+    } 
+
+    .biography-image {
+        position: absolute;
+        width: 100%;
+        height: 38%;
+        bottom: 0;
+    }
+
+    .biography-image img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     /* Наложение макета */
     .layout-check {
@@ -439,7 +479,7 @@ section:nth-child(n+5) {
     }
 
     /* Заглушка для отключений ненужных секций */
-    section:nth-child(n+2) {
+    section:nth-child(n+3) {
         display: none;
     }
 }
