@@ -44,6 +44,10 @@ section {
 	height: 60vw;
 }
 
+.main-image-m {
+    display: none;
+}
+
 .main-title {
     position: absolute;
     background-color: white;
@@ -366,7 +370,6 @@ section {
     font-weight: 700;
 }
 
-
 /* Наложение макета */
 .layout-check {
     display: none;
@@ -385,4 +388,58 @@ section {
 /* Заглушка для отключений ненужных секций */
 section:nth-child(n+5) {
     display: none;
+}
+
+
+@media (max-width: 700px) {
+    .main-title {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        height: 45%;
+    }
+
+    .main-title h1 {
+        font-size: 0.87em;
+        top: 68%;
+    }
+
+    .main-title h2 {
+        top: 69%;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-image-m {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        max-height: none;
+        object-fit: none;
+        object-position: bottom center;
+    }
+
+
+    /* Наложение макета */
+    .layout-check {
+        /* display: block; */
+        width: 428px;
+        height: 4641px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: url(../images/iPhone\ 13\ Pro\ Max\ -\ 1.jpg) no-repeat center;
+        opacity: 0.5;
+        z-index: 2;
+    }
+
+    /* Заглушка для отключений ненужных секций */
+    section:nth-child(n+2) {
+        display: none;
+    }
 }
