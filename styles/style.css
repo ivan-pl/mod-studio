@@ -785,6 +785,44 @@ section {
         margin-bottom: 2%;
     }
 
+
+    @media (max-height: 700px) {
+        /* section main-page */
+        .main-page {
+            min-height: 30rem;
+        }
+        
+        .main-title h1 {
+            top: 50%;
+        }
+
+        .main-title h2 {
+            top: 40%;
+        }
+
+        /* section biography */
+        .biography-text blockquote {
+            padding-top: 5%;
+        }
+
+        .biography-text h3 {
+            top: 0;
+        }
+
+        /* section testimonials */
+
+        .flex-container-right {
+            padding-top: 0;
+            justify-content: flex-start;
+            gap: 5%;
+            height: 65%;
+        }
+
+        .right-image {
+            height: 70%;
+        }
+    }
+
     /* Наложение макета */
     .layout-check {
         /* display: block; */
