@@ -742,6 +742,49 @@ section {
         object-position: center center;
     }
 
+
+    /* section strong points */
+    .strong-points h2 {
+        transform: none;
+        writing-mode: unset;
+        top: 16.5%;
+        left: unset;
+        right: 9%;
+    }
+
+    .flex-container .flex-item-strengths {
+        order: 1;
+        max-width: 351px;
+        width: 60%;
+        flex: auto;
+        transform: translate(-21px, 12px);
+    }
+
+    .flex-container img:nth-of-type(1) {
+        order: 2;
+    }
+
+    .flex-container img:nth-of-type(2) {
+        order: 3;
+    }
+
+    .flex-container img:nth-of-type(3) {
+        order: 4;
+    }
+
+    .strong-points .flex-container {
+        top: 27%;
+    }
+
+    .strong-points h3 {
+        padding-top: 0;
+        padding-left: 20%;
+    }
+
+    .strong-points img {
+        margin-bottom: 2%;
+    }
+
     /* Наложение макета */
     .layout-check {
         /* display: block; */
@@ -758,7 +801,7 @@ section {
     }
 
     /* Заглушка для отключений ненужных секций */
-    section:nth-child(n+5) {
+    /* section:nth-child(n+6) {
         display: none;
-    }
+    } */
 }
