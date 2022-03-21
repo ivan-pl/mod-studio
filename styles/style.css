@@ -791,6 +791,10 @@ section {
         .main-page {
             min-height: 30rem;
         }
+
+        .main-image {
+            object-position: center;
+        }
         
         .main-title h1 {
             top: 50%;
@@ -809,6 +813,15 @@ section {
             top: 0;
         }
 
+        /* section designers */
+        .designers {
+            min-height: 42rem;
+        }
+
+        .designers h2 {
+            top: 10%;
+        }
+
         /* section testimonials */
 
         .flex-container-right {
@@ -820,6 +833,13 @@ section {
 
         .right-image {
             height: 70%;
+        }
+
+        .testimonials .flex-container a {
+            flex-basis: 9rem;
+            font-size: 0.9rem;
+            padding-bottom: 5%;
+            transform: translateY(-30%);
         }
     }
 
