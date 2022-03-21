@@ -537,48 +537,83 @@ section {
     }
 
     /* section biography */
-    .biography h2 {
-        transform: none;
-        top: 0;
-        right: 0;
-        bottom: unset;
+    .biography {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .biography-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        order: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .biography-text h4 {
+        order: 1;
+        margin: 0;
+        padding-top: 11%;
+        padding-left: 7%;
+    }
+
+    .biography-text ul {
+        order: 2;
+        margin: 0;
+        padding-left: 7%;
+    }
+
+    .biography-text blockquote {
+        order: 3;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 22%;
         margin: 0;
     }
 
     .biography-text h3 {
         white-space: nowrap;
-        font-size: 4.875rem;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 50%;
-        margin: 0 auto;
+        font-size: 4.5rem;
+        order: 4;
+        align-self: center;
+        margin: 0;
+        justify-self: flex-end;
+        margin-top: auto;
+        transform: translateY(10px);
     }
 
-    .biography br {
-        display: none;
+    .biography-text ul li {
+        display: block;
     }
-
-    .biography h3 {
-        content: "asds";
-    }
-
-    .biography blockquote {
-        display: none;
-    } 
 
     .biography-image {
-        position: absolute;
+        order: 2;
         width: 100%;
-        height: 38%;
-        bottom: 0;
+        height: 58%;
     }
 
     .biography-image img {
-        margin: 0;
+        position: static;
         width: 100%;
         height: 100%;
     }
+
+    .biography h2 {
+        transform: none;
+        top: 5%;
+        right: 7%;
+        margin: 0;
+    }
+
+    .biography h3::before {
+        content: "-";
+    }
+
+    .biography br, hr {
+        display: none;
+    }
+
 
     /* Наложение макета */
     .layout-check {
@@ -596,7 +631,7 @@ section {
     }
 
     /* Заглушка для отключений ненужных секций */
-    section:nth-child(n+2) {
+    section:nth-child(n+3) {
         display: none;
     }
 }
