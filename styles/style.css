@@ -810,6 +810,10 @@ section {
         }
 
         /* section biography */
+        .biography {
+            min-height: 40rem;
+        }
+
         .biography-text blockquote {
             padding-top: 5%;
         }
@@ -823,22 +827,13 @@ section {
             min-height: 37rem;
         }
 
-        .designers h2 {
-            top: 5%
-        }
-
         .designers .flex-container {
             top: 12%;
             min-height: 33rem;
         }
 
-        /* section designers */
-        .designers {
-            min-height: 42rem;
-        }
-
         .designers h2 {
-            top: 10%;
+            top: 4%;
         }
 
         /* section testimonials */
@@ -851,7 +846,8 @@ section {
             padding-top: 0;
             justify-content: flex-start;
             gap: 5%;
-            height: 65%;
+            height: 80%;
+            overflow: hidden;
         }
 
         .right-image {
@@ -862,8 +858,43 @@ section {
             flex-basis: 9rem;
             font-size: 0.9rem;
             padding-bottom: 5%;
-            transform: translateY(-30%);
+            transform: none;
+            padding-bottom: 0%;
         }
+
+
+        /* section strong-points */
+        .strong-points h2 {
+            top: 3%;
+        }
+
+        .strong-points img {
+            flex-basis: 245px;
+            height: 420px;
+        }
+
+        .strong-points ul {
+            padding-top: 0;
+        }
+
+        .strong-points li {
+            font-size: 1.8rem;
+        }
+
+        .strong-points h3 {
+            font-size: 4.5rem;
+        }
+
+        .flex-item-strengths {
+            padding-top: 6%;
+        }
+
+        .strong-points .flex-container {
+            height: 34rem;
+            top: 3%;
+            overflow-y: hidden;
+        }
+
     }
 
     /* Наложение макета */
