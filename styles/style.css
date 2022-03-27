@@ -421,7 +421,6 @@ section {
     font-weight: 700;
 }
 
-
 /* section strong-points */
 .strong-points h2 {
     position: absolute;
@@ -504,3 +503,417 @@ section {
 /* section:nth-child(n+5) {
     display: none;
 } */
+
+@media (max-width: 700px) {
+    section {
+        min-width: 22.5rem;
+    }
+
+    /* section main-page */
+    .main-title {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        height: 45%;
+    }
+
+    .main-title h1 {
+        font-size: 0.87em;
+        top: 68%;
+    }
+
+    .main-title h2 {
+        top: 69%;
+    }
+
+    .main-image {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        max-height: none;
+        object-fit: none;
+        object-position: bottom center;
+    }
+
+    /* section biography */
+    .biography {
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: hidden;
+    }
+
+    .biography-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        order: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .biography-text h4 {
+        order: 1;
+        margin: 0;
+        padding-top: 11%;
+        padding-left: 7%;
+    }
+
+    .biography-text ul {
+        order: 2;
+        margin: 0;
+        padding-left: 7%;
+    }
+
+    .biography-text blockquote {
+        order: 3;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 22%;
+        margin: 0;
+    }
+
+    .biography-text h3 {
+        white-space: nowrap;
+        font-size: 4.5rem;
+        order: 4;
+        align-self: center;
+        margin: 0;
+        justify-self: flex-end;
+        margin-top: auto;
+        position: relative;
+        top: 7%;
+    }
+
+    .biography-text ul li {
+        display: block;
+    }
+
+    .biography-image {
+        order: 2;
+        width: 100%;
+        height: 58%;
+        position: relative;
+        top: 3%;
+        height: 65%;
+    }
+
+    .biography-image img {
+        position: static;
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        object-position: top;
+    }
+
+    .biography h2 {
+        transform: none;
+        top: 5%;
+        right: 7%;
+        margin: 0;
+    }
+
+    .biography h3::before {
+        content: "-";
+    }
+
+    .biography br, hr {
+        display: none;
+    }
+
+
+    /* section designers */
+    .designers h2 {
+        transform: none;
+        right: 9%;
+        top: 9%;
+    }
+
+    .designers .flex-container {
+        overflow-y: visible;
+        overflow-x: auto;
+        padding-right: 0;
+        padding-left: 8%;
+        gap: 6%;
+        top: 20%;
+    }
+
+    .designers .flex-container figure img {
+        height: 440px;
+    }
+
+    .designers .flex-container figure:first-child img {
+        height: 440px;
+        object-position: bottom center;
+    }
+
+    .designers .flex-container figure {
+        flex: 1 0 262px;
+    }
+
+    .designers .flex-container figure:first-child {
+        flex: 1 0 262px;
+        margin-right: 0;
+        order: 3;
+    }
+
+    .designers .flex-container figure:nth-child(3) figcaption {
+        width: fit-content;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* section testimonials */
+    .testimonials {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        padding-top: 4%;
+    }
+    
+    .testimonials h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 100%;
+        display: flex;
+        order: 1;
+        justify-content: flex-end;
+        padding-right: 10%;
+    }
+    
+    .testimonials .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-between;
+        width: 100%;
+        height: 13%;
+        order: 3;
+        padding: 0 7%;
+        justify-self: self-end;
+        margin-top: auto;
+    }
+    
+    .testimonials .flex-container a { 
+        text-align: left;
+        color: black;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        transform: none;
+        writing-mode: unset;
+    }
+
+    .left-image {
+        display: none;
+    }
+    
+    .flex-container-right {
+        display: flex;
+        flex-flow: nowrap column;
+        order: 2;
+        align-self: center;
+        width: 100%;
+        height: 75%;
+        margin: 0;
+        padding: 22% 7% 0 7%;
+        justify-content: space-between;
+    }
+    
+    .testimonials blockquote {
+        font-family: 'Butler', sans-serif;
+        font-weight: 200;
+        font-size: 2rem;
+        width: 94%;
+        justify-self: center;
+        margin: 0 auto;
+    }
+    
+    .right-image {
+        width: 100%;
+        height: 58%;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    /* section strong points */
+    .strong-points h2 {
+        transform: none;
+        writing-mode: unset;
+        top: 16.5%;
+        left: unset;
+        right: 9%;
+    }
+
+    .flex-container .flex-item-strengths {
+        order: 1;
+        max-width: 351px;
+        width: 60%;
+        flex: auto;
+        transform: translate(-21px, 12px);
+    }
+
+    .flex-container img:nth-of-type(1) {
+        order: 2;
+    }
+
+    .flex-container img:nth-of-type(2) {
+        order: 3;
+    }
+
+    .flex-container img:nth-of-type(3) {
+        order: 4;
+    }
+
+    .strong-points .flex-container {
+        top: 27%;
+    }
+
+    .strong-points h3 {
+        padding-top: 0;
+        padding-left: 20%;
+    }
+
+    .strong-points img {
+        margin-bottom: 2%;
+    }
+
+    @media (max-width: 410px) {
+        .testimonials .flex-container a {
+            font-size: 0.9rem;
+            flex-basis: 9rem;
+        }
+    }
+
+    @media (max-height: 700px) {
+        section {
+            min-height: 34rem;
+        }
+
+        .main-image {
+            object-position: center;
+        }
+        
+        .main-title h1 {
+            top: 50%;
+        }
+
+        .main-title h2 {
+            top: 56%;
+        }
+
+        /* section biography */
+        .biography {
+            min-height: 40rem;
+        }
+
+        .biography-text blockquote {
+            padding-top: 5%;
+        }
+
+        .biography-text h3 {
+            top: 8%;
+        }
+
+        /* section designers */
+        .designers {
+            min-height: 37rem;
+        }
+
+        .designers .flex-container {
+            top: 12%;
+            min-height: 33rem;
+        }
+
+        .designers h2 {
+            top: 4%;
+        }
+
+        /* section testimonials */
+        .testimonials h2 {
+            padding-bottom: 2%;
+            padding-top: 2%;
+        }
+
+        .flex-container-right {
+            padding-top: 0;
+            justify-content: flex-start;
+            gap: 5%;
+            height: 80%;
+            overflow: hidden;
+        }
+
+        .right-image {
+            height: 70%;
+        }
+
+        .testimonials .flex-container a {
+            flex-basis: 9rem;
+            font-size: 0.9rem;
+            padding-bottom: 5%;
+            transform: none;
+            padding-bottom: 0%;
+        }
+
+
+        /* section strong-points */
+        .strong-points h2 {
+            top: 3%;
+        }
+
+        .strong-points img {
+            flex-basis: 245px;
+            height: 420px;
+        }
+
+        .strong-points ul {
+            padding-top: 0;
+        }
+
+        .strong-points li {
+            font-size: 1.8rem;
+        }
+
+        .strong-points h3 {
+            font-size: 4.5rem;
+        }
+
+        .flex-item-strengths {
+            padding-top: 6%;
+        }
+
+        .strong-points .flex-container {
+            height: 34rem;
+            top: 3%;
+            overflow-y: hidden;
+        }
+
+    }
+
+    /* Наложение макета */
+    .layout-check {
+        /* display: block; */
+        width: 428px;
+        height: 4641px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: url(../images/iPhone\ 13\ Pro\ Max\ -\ 1.jpg) no-repeat center;
+        opacity: 0.5;
+        z-index: 2;
+    }
+
+    /* Заглушка для отключений ненужных секций */
+    /* section:nth-child(n+6) {
+        display: none;
+    } */
+}

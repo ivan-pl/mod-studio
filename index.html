@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mod Studio</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/fonts.css">
@@ -26,17 +27,21 @@
                     <h1>Atlas Studio</h1>
                     <h2>Modern Web Studio</h2>
                 </div>
-                <img class="main-image" src="images/main-image.jpg" alt="The dooway and the flower pot">
+                <picture class="main-image"> 
+                    <source srcset="images/main-image-mobile.jpg" media="(max-width: 700px)">
+                    <img class="main-image" src="images/main-image.jpg" alt="The dooway and the flower pot">
+                </picture>
                 <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
             </section>
             <section id="biography" class="biography">
                 <h2>Biography</h2>
                 <!-- <div class="caption-top">&mdash; Creative studio</div> -->
-                <div class="biography-image">
+                <picture class="biography-image">
+                    <source srcset="images/biography-image-mobile.jpg" media="(max-width: 700px)">
                     <img src="images/biography-image.jpg" alt="The girl walks barefoot on the sand">
-                </div>
+                </picture>
                 <div class="biography-text">
-                    <h3>Katya<br>Mills</h3>
+                    <h3>Katya <br>Mills</h3>
                     <h4>Art Director</h4>
                     <ul>
                         <li>Scenography</li>
