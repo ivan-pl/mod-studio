@@ -9,12 +9,21 @@
 }
 
 /* Прячем навигацию */
-header {
+nav {
     display: none;
 }
 
 body {
     background-color: white;
+
+    /* mobile viewport bug fix */
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 main {
@@ -783,6 +792,51 @@ section {
 
     .strong-points img {
         margin-bottom: 2%;
+    }
+
+    /* navigation */
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        background-color: white;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    nav a {
+        font-family: 'Butler', sans-serif;
+        font-weight: 500;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav a:first-child {
+        display: none;
+    }
+
+    nav a:nth-child(2)::after {
+        content: 'B';
+    }
+
+    nav a:nth-child(3)::after {
+        content: 'D';
+    }
+
+    nav a:nth-child(4)::after {
+        content: 'T';
+    }
+
+    nav a:nth-child(5)::after {
+        content: 'S';
+        text-decoration: underline;
     }
 
     @media (max-width: 410px) {
