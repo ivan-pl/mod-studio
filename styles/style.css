@@ -29,6 +29,7 @@ html {
 main {
     max-width: 90rem;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -795,11 +796,21 @@ section {
     }
 
     /* navigation */
+    body {
+        padding-bottom: 6rem;
+    }
+
     nav {
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
+        min-height: 3rem;
+        height: 8%;
+        max-height: 5rem;
+        min-width: 22.5rem;
+        border-top: 1px solid black;
         justify-content: space-around;
+        align-items: center;
         position: fixed;
         bottom: 0;
         z-index: 100;
