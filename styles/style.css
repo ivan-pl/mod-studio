@@ -237,14 +237,14 @@ section {
     gap: 2%;
     position: relative;
     top: 12%;
-    padding-right: 5rem;
+    overflow-x: auto;
 }
 
 .designers .flex-container figure {
     text-align: left;
     margin: 0;
     height: 100%;
-    flex: 1 1 10%;
+    flex: 0 0 304px;
 }
 
 .designers .flex-container figure img {
@@ -260,8 +260,8 @@ section {
 }
 
 .designers .flex-container figure:first-child {
-    flex: 2 1 20%;
-    margin-right: 7%;
+    flex: 0 0 608px;
+    margin-right: 6%;
 }
 
 .designers .flex-container figure:first-child img {
