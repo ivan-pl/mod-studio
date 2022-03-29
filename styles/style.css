@@ -228,6 +228,12 @@ section {
     top: 13%;
 }
 
+@media (max-width: 900px) {
+    .designers h2 {
+        right: 5%;
+    }
+}
+
 .designers .flex-container {
     display: flex;
     height: 75%;
@@ -238,6 +244,7 @@ section {
     position: relative;
     top: 12%;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .designers .flex-container figure {
@@ -245,6 +252,7 @@ section {
     margin: 0;
     height: 100%;
     flex: 0 0 304px;
+    overflow: hidden;
 }
 
 .designers .flex-container figure img {
@@ -253,7 +261,19 @@ section {
     height: 65%;
     object-fit: cover;
     object-position: center bottom;
+    transition: .3s;
 }
+
+/* gallery animation */
+.designers .flex-container:hover figure img {
+    filter: grayscale(1);
+}
+
+.designers .flex-container figure:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1) translateY(-5%);
+}
+
 
 .designers .flex-container figure figcaption {
     max-height: 20%;
@@ -453,6 +473,7 @@ section {
     position: relative;
     top: 14%;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .strong-points img {
@@ -461,6 +482,7 @@ section {
     object-fit: cover;
     object-position: bottom left;
     overflow: hidden;
+    transition: .3s;
 }
 
 .flex-item-strengths {
@@ -470,6 +492,18 @@ section {
     padding-right: 10%;
     padding-left: 3%;
     flex: 1 0 351px;
+    transition: .3s;
+}
+
+@media (min-width: 700px) {
+    .strong-points img:hover {
+        transform: scale(1.1) translateY(-5%);
+        margin: 0 3%;
+    }
+    
+    .flex-item-strengths:hover {
+        transform: scale(1.07);
+    }
 }
 
 .strong-points h3 {
@@ -885,6 +919,7 @@ section {
 
         .biography-text h3 {
             top: 8%;
+            z-index: 2;
         }
 
         /* section designers */
