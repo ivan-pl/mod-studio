@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Прячем навигацию */
+/* TODO: add navigation to descktop */
 nav {
   display: none;
 }
@@ -40,7 +40,11 @@ section {
   text-align: center;
 }
 
-/* section main-page */
+
+/*------------------------------------*\
+  #MAIN-PAGE DESKTOP
+\*------------------------------------*/
+
 .main-image {
   position: absolute;
   object-fit: cover;
@@ -99,7 +103,11 @@ section {
     color: #8C8888;
 } */
 
-/*section biography*/
+
+/*------------------------------------*\
+  #BIOGRAPHY DESKTOP
+\*------------------------------------*/
+
 .biography-image,
 .biography-text {
   position: relative;
@@ -216,7 +224,11 @@ section {
   clear: both;
 }
 
-/*section designers*/
+
+/*------------------------------------*\
+  #DESIGNERS DESKTOP
+\*------------------------------------*/
+
 .designers h2 {
   position: absolute;
   transform: rotate(-90deg);
@@ -306,7 +318,11 @@ section {
   margin-top: 1.5rem;
 }
 
-/*section testimonials*/
+
+/*------------------------------------*\
+  #TESTIMONIALS DESKTOP
+\*------------------------------------*/
+
 .testimonials {
   display: flex;
   flex-flow: row wrap;
@@ -446,7 +462,11 @@ section {
   font-weight: 700;
 }
 
-/* section strong-points */
+
+/*------------------------------------*\
+  #STRONG-POINTS DESKTOP
+\*------------------------------------*/
+
 .strong-points h2 {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -542,12 +562,27 @@ section {
     display: none;
 } */
 
+
+
+
+
 @media (max-width: 700px) {
   section {
     min-width: 22.5rem;
   }
 
-  /* section main-page */
+  @media (max-height: 700px) {
+    section {
+      min-height: 34rem;
+    }   
+  }
+
+
+
+  /*------------------------------------*\
+    #MAIN-PAGE MOBILE
+  \*------------------------------------*/
+
   .main-title {
     top: 0;
     margin: 0;
@@ -574,7 +609,28 @@ section {
     object-position: bottom center;
   }
 
-  /* section biography */
+  @media (max-height: 700px) {
+    .main-image {
+        object-position: center;
+      }
+  
+      .main-title h1 {
+        top: 50%;
+      }
+  
+      .main-title h2 {
+        top: 56%;
+      }
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #BIOGRAPHY MOBILE
+  \*------------------------------------*/
+
   .biography {
     display: flex;
     flex-flow: column nowrap;
@@ -660,7 +716,29 @@ section {
     display: none;
   }
 
-  /* section designers */
+  @media (max-height: 700px) {
+    .biography {
+        min-height: 40rem;
+      }
+  
+      .biography-text blockquote {
+        padding-top: 5%;
+      }
+  
+      .biography-text h3 {
+        top: 8%;
+        z-index: 2;
+      }
+  }
+
+
+
+
+  
+  /*------------------------------------*\
+    #DESIGNERS MOBILE
+  \*------------------------------------*/
+
   .designers h2 {
     transform: none;
     right: 9%;
@@ -702,7 +780,29 @@ section {
     transform: translateX(-50%);
   }
 
-  /* section testimonials */
+  @media (max-height: 700px) {
+    .designers {
+        min-height: 37rem;
+      }
+  
+      .designers .flex-container {
+        top: 12%;
+        min-height: 33rem;
+      }
+  
+      .designers h2 {
+        top: 4%;
+      }
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #TESTIMONIALS MOBILE
+  \*------------------------------------*/
+
   .testimonials {
     display: flex;
     flex-flow: column nowrap;
@@ -780,7 +880,48 @@ section {
     object-position: center center;
   }
 
-  /* section strong points */
+  @media (max-width: 410px) {
+    .testimonials .flex-container a {
+      font-size: 0.9rem;
+      flex-basis: 9rem;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .testimonials h2 {
+        padding-bottom: 2%;
+        padding-top: 2%;
+      }
+  
+      .flex-container-right {
+        padding-top: 0;
+        justify-content: flex-start;
+        gap: 5%;
+        height: 80%;
+        overflow: hidden;
+      }
+  
+      .right-image {
+        height: 70%;
+      }
+  
+      .testimonials .flex-container a {
+        flex-basis: 9rem;
+        font-size: 0.9rem;
+        padding-bottom: 5%;
+        transform: none;
+        padding-bottom: 0%;
+      }
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #STRONG-POINTS MOBILE
+  \*------------------------------------*/
+
   .strong-points h2 {
     transform: none;
     writing-mode: unset;
@@ -822,7 +963,47 @@ section {
     margin-bottom: 2%;
   }
 
-  /* navigation */
+  @media (max-height: 700px) {
+    .strong-points h2 {
+        top: 3%;
+      }
+  
+      .strong-points img {
+        flex-basis: 245px;
+        height: 420px;
+      }
+  
+      .strong-points ul {
+        padding-top: 0;
+      }
+  
+      .strong-points li {
+        font-size: 1.8rem;
+      }
+  
+      .strong-points h3 {
+        font-size: 4.5rem;
+      }
+  
+      .flex-item-strengths {
+        padding-top: 6%;
+      }
+  
+      .strong-points .flex-container {
+        height: 34rem;
+        top: 3%;
+        overflow-y: hidden;
+      }
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #NAVUGATION MOBILE
+  \*------------------------------------*/ 
+
   body {
     padding-bottom: 6rem;
   }
@@ -877,116 +1058,9 @@ section {
     text-decoration: underline;
   }
 
-  @media (max-width: 410px) {
-    .testimonials .flex-container a {
-      font-size: 0.9rem;
-      flex-basis: 9rem;
-    }
-  }
 
-  @media (max-height: 700px) {
-    section {
-      min-height: 34rem;
-    }
 
-    .main-image {
-      object-position: center;
-    }
 
-    .main-title h1 {
-      top: 50%;
-    }
-
-    .main-title h2 {
-      top: 56%;
-    }
-
-    /* section biography */
-    .biography {
-      min-height: 40rem;
-    }
-
-    .biography-text blockquote {
-      padding-top: 5%;
-    }
-
-    .biography-text h3 {
-      top: 8%;
-      z-index: 2;
-    }
-
-    /* section designers */
-    .designers {
-      min-height: 37rem;
-    }
-
-    .designers .flex-container {
-      top: 12%;
-      min-height: 33rem;
-    }
-
-    .designers h2 {
-      top: 4%;
-    }
-
-    /* section testimonials */
-    .testimonials h2 {
-      padding-bottom: 2%;
-      padding-top: 2%;
-    }
-
-    .flex-container-right {
-      padding-top: 0;
-      justify-content: flex-start;
-      gap: 5%;
-      height: 80%;
-      overflow: hidden;
-    }
-
-    .right-image {
-      height: 70%;
-    }
-
-    .testimonials .flex-container a {
-      flex-basis: 9rem;
-      font-size: 0.9rem;
-      padding-bottom: 5%;
-      transform: none;
-      padding-bottom: 0%;
-    }
-
-    /* section strong-points */
-    .strong-points h2 {
-      top: 3%;
-    }
-
-    .strong-points img {
-      flex-basis: 245px;
-      height: 420px;
-    }
-
-    .strong-points ul {
-      padding-top: 0;
-    }
-
-    .strong-points li {
-      font-size: 1.8rem;
-    }
-
-    .strong-points h3 {
-      font-size: 4.5rem;
-    }
-
-    .flex-item-strengths {
-      padding-top: 6%;
-    }
-
-    .strong-points .flex-container {
-      height: 34rem;
-      top: 3%;
-      overflow-y: hidden;
-    }
-  }
 
   /* Наложение макета */
   .layout-check {
