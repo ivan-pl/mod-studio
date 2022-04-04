@@ -21,12 +21,12 @@
 
 
 /* TODO: add navigation for descktop */
-nav {
+.menu {
   display: none;
 }
 
 
-body {
+.body {
   background-color: white;
 
   /* mobile viewport bug fix */
@@ -1047,14 +1047,15 @@ section {
 
 
   /*------------------------------------*\
-    #NAVUGATION MOBILE
+    #NAVIGATION MOBILE
   \*------------------------------------*/ 
 
-  body {
+  .body {
     padding-bottom: 6rem;
   }
 
-  nav {
+
+  .menu {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
@@ -1071,38 +1072,38 @@ section {
     background-color: white;
   }
 
-  nav span {
-    display: none;
-  }
+    .menu__link {
+      font-family: "Butler", sans-serif;
+      font-weight: 500;
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: black;
+    }
 
-  nav a {
-    font-family: "Butler", sans-serif;
-    font-weight: 500;
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: black;
-  }
+      .menu__text {
+        display: none;
+      }
 
-  nav a:first-child {
-    display: none;
-  }
+    .menu__link:first-child {
+      display: none;
+    }
 
-  nav a:nth-child(2)::after {
-    content: "B";
-  }
+    .menu__link:nth-child(2)::after {
+      content: "B";
+    }
 
-  nav a:nth-child(3)::after {
-    content: "D";
-  }
+    .menu__link:nth-child(3)::after {
+      content: "D";
+    }
 
-  nav a:nth-child(4)::after {
-    content: "T";
-  }
+    .menu__link:nth-child(4)::after {
+      content: "T";
+    }
 
-  nav a:nth-child(5)::after {
-    content: "S";
-    text-decoration: underline;
-  }
+    .menu__link:nth-child(5)::after {
+      content: "S";
+      text-decoration: underline;
+    }
 
 
 
