@@ -81,7 +81,7 @@
     margin: 0;
 
     white-space: nowrap;
-    font-size: 1.15em;
+    font-size:   1.15em;
     font-family: "Butler", sans-serif;
     font-weight: 300;
   }
@@ -93,7 +93,7 @@
     margin: 0;
 
     font-family: "Roboto", sans-serif;
-    font-size: 0.25em;
+    font-size:   0.25em;
     font-weight: bold;
   }
 
@@ -112,16 +112,15 @@
 
 .main-page__main-image {
   position: absolute;
-  object-fit: cover;
-  top: 0;
-  right: 0;
+  top:    0;
+  right:  0;
   bottom: 0;
-  left: 0;
+  left:   0;
   margin: auto;
   max-height: 40rem;
-  height: 60vw;
+  height:     60vw;
+  object-fit: cover;
 }
-
 
 
 /* .caption-bottom {
@@ -142,118 +141,116 @@
   #BIOGRAPHY DESKTOP
 \*------------------------------------*/
 
-.biography-image,
-.biography-text {
+.biography__header {
+  position: absolute;
+  bottom: 9.5%;
+  right:  3%;
+  transform: rotate(-90deg);
+
+  font-family: "Roboto", sans-serif;
+  font-size:   1.15rem;
+  font-weight: bold;
+}
+
+.biography__photo-wrap,
+.biography__text-wrap {
   position: relative;
-  width: 50%;
+  width:  50%;
   height: 100%;
   float: left;
 }
 
-
-.biography-image img {
+.biography__photo {
   display: block;
   position: relative;
-  width: 77%;
-  height: auto;
+  left:       19%;
+  width:      77%;
+  height:     auto;
   max-height: 100%;
-  object-fit: cover;
+  object-fit:      cover;
   object-position: center center;
-  overflow: hidden;
-  left: 19%;
+  overflow:        hidden;
 }
 
-
-.biography-text {
-  padding-top: 7%;
+.biography__text-wrap {
+  padding-top:  7%;
   padding-left: 8%;
   text-align: left;
 }
 
+  .biography__name {
+    font-size:   5.4rem;
+    font-family: "Butler", sans-serif;
+    font-weight: 300;
 
-.biography-text h3 {
-  font-size: 5.4rem;
-  margin-bottom: 2rem;
-  font-family: "Butler", sans-serif;
-  font-weight: 300;
-}
+    margin-bottom: 2rem;
+  }
 
+  .biography__position {
+    font-size:   1.1rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color:     #636363;
 
-.biography h2 {
-  position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.15rem;
-  font-weight: bold;
-  bottom: 9.5%;
-  right: 3%;
-  transform: rotate(-90deg);
-}
+    margin-top:    9%;
+    margin-bottom: 0;
+  }
 
+  .biography__skills-list {
+    font-size:   1.1rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color:     #636363;
 
-.biography-text h4 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-  color: #636363;
-  margin-top: 9%;
-}
+    padding-left:  0;
+    margin-top:    0;
+    margin-bottom: 4rem;
+  }
 
+    .biography__skills-item {
+      display: inline-block;
+      list-style-type: none;
+    }
 
-.biography-text ul {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 4rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  color: #636363;
-}
+      .biography__skills-item::after {
+        content: " /";
+      }
 
+      .biography__skills-item:last-child::after {
+        content: none;
+      }
 
-.biography-text ul li {
-  display: inline-block;
-  list-style-type: none;
-}
+  .biography__quote {
+    font-size:   2rem;
+    font-family: "Butler", sans-serif;
+    font-weight: 200;
+    quotes: "“" "”";
+    
+    margin-left:  0;
+    margin-right: 32%;
+    margin-top:   4%;
+  }
 
+    .biography__quote::before {
+      content: open-quote;
+    }
 
-.biography-text ul li::after {
-  content: " /";
-}
+    .biography__quote::after {
+      content: close-quote;
+    }
 
+  .biography__horizontal-break {
+    height: 0.3rem;
+    width:  1rem;
+    background-color: black;
+    margin-left: 0;
+  }
 
-.biography-text ul li:last-child::after {
-  content: none;
-}
-
-
-.biography-text blockquote {
-  margin-left: 0;
-  margin-right: 32%;
-  margin-top: 4%;
-  font-size: 2rem;
-  font-family: "Butler", sans-serif;
-  font-weight: 200;
-  quotes: "“" "”";
-}
-
-
-.biography-text blockquote::before {
-  content: open-quote;
-}
-
-
-.biography-text blockquote::after {
-  content: close-quote;
-}
-
-
-.biography-text hr {
-  height: 0.3rem;
-  width: 1rem;
-  background-color: black;
-  margin-left: 0;
-}
+  .biography::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 
 
 /* .caption-top {
@@ -265,13 +262,6 @@
     font-family: 'Butler', sans-serif;
     color: #8C8888;
 } */
-
-
-.biography::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 
 
@@ -691,13 +681,13 @@
     #BIOGRAPHY MOBILE
   \*------------------------------------*/
 
-  .biography {
+  .biography--mobile {
     display: flex;
     flex-flow: column nowrap;
     overflow: hidden;
   }
 
-  .biography-text {
+  .biography__text-wrap--mobile {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -706,20 +696,20 @@
     padding: 0;
   }
 
-  .biography-text h4 {
+  .biography__position--mobile {
     order: 1;
     margin: 0;
     padding-top: 11%;
     padding-left: 7%;
   }
 
-  .biography-text ul {
+  .biography__skills-list--mobile {
     order: 2;
     margin: 0;
     padding-left: 7%;
   }
 
-  .biography-text blockquote {
+  .biography__quote--mobile {
     order: 3;
     padding-left: 7%;
     padding-right: 7%;
@@ -727,7 +717,7 @@
     margin: 0;
   }
 
-  .biography-text h3 {
+  .biography__name--mobile {
     white-space: nowrap;
     font-size: 4.5rem;
     order: 4;
@@ -739,11 +729,11 @@
     top: 7%;
   }
 
-  .biography-text ul li {
+  .biography__skills-item--mobile {
     display: block;
   }
 
-  .biography-image {
+  .biography__photo-wrap--mobile {
     order: 2;
     width: 100%;
     height: 58%;
@@ -752,7 +742,7 @@
     height: 65%;
   }
 
-  .biography-image img {
+  .biography__photo--mobile {
     position: static;
     width: 100%;
     height: 90%;
@@ -760,32 +750,32 @@
     object-position: top;
   }
 
-  .biography h2 {
+  .biography__header--mobile {
     transform: none;
     top: 5%;
     right: 7%;
     margin: 0;
   }
 
-  .biography h3::before {
+  .biography__name--mobile::before {
     content: "-";
   }
 
-  .biography br,
-  hr {
+  .biography__break-name,
+  .biography__horizontal-break--mobile {
     display: none;
   }
 
   @media (max-height: 700px) {
-    .biography {
+    .biography--mobile {
         min-height: 40rem;
       }
   
-      .biography-text blockquote {
+      .biography__quote--mobile {
         padding-top: 5%;
       }
   
-      .biography-text h3 {
+      .biography__name--mobile {
         top: 8%;
         z-index: 2;
       }

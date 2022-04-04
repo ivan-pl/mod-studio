@@ -31,7 +31,7 @@
           <h1 class="page-titles__main-header page-titles__main-header--mobile">Atlas Studio</h1>
           <h2 class="page-titles__secondary-header page-titles__secondary-header--mobile">Modern Web Studio</h2>
         </div>
-        <picture class="main-page__main-image main-page__main-image--mobile">
+        <picture class="main-page__main-image-wrap">
           <source
             srcset="images/main-image-mobile.jpg"
             media="(max-width: 700px)"
@@ -45,10 +45,14 @@
         <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
       </section>
 
-      <section id="biography" class="biography">
-        <h2>Biography</h2>
+
+      <section id="biography" class="biography biography--mobile">
+        
+        <h2 class="biography__header biography__header--mobile">Biography</h2>
+        
         <!-- <div class="caption-top">&mdash; Creative studio</div> -->
-        <picture class="biography-image">
+        
+        <picture class="biography__photo-wrap biography__photo-wrap--mobile">
           <source
             srcset="images/biography-image-mobile.jpg"
             media="(max-width: 700px)"
@@ -56,25 +60,31 @@
           <img
             src="images/biography-image.jpg"
             alt="The girl walks barefoot on the sand"
+            class="biography__photo biography__photo--mobile"
           />
         </picture>
-        <div class="biography-text">
-          <h3>Katya <br />Mills</h3>
-          <h4>Art Director</h4>
-          <ul>
-            <li>Scenography</li>
-            <li>Styling</li>
-            <li>Creative Photography</li>
-            <li>Design</li>
+        
+        <div class="biography__text-wrap biography__text-wrap--mobile">
+          <h3 class="biography__name biography__name--mobile">Katya <br class="biography__break-name" />Mills</h3>
+          <h4 class="biography__position biography__position--mobile">Art Director</h4>
+          <ul class="biography__skills-list biography__skills-list--mobile">
+            <li class="biography__skills-item biography__skills-item--mobile">Scenography</li>
+            <li class="biography__skills-item">Styling</li>
+            <li class="biography__skills-item">Creative Photography</li>
+            <li class="biography__skills-item">Design</li>
           </ul>
-          <hr />
-          <blockquote cite="#">
+          <hr class="biography__horizontal-break biography__horizontal-break--mobile" />
+          <blockquote class="biography__quote biography__quote--mobile" cite="#">
             The more I deal with the work as something that is my own, as
             something that is personal, the more successful it is.
           </blockquote>
         </div>
+
         <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
+
       </section>
+      
+      
       <section id="designers" class="designers">
         <h2>Designers</h2>
         <div class="flex-container">
