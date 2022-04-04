@@ -20,13 +20,13 @@
 }
 
 
-/* TODO: add navigation for descktop */
-.menu {
-  display: none;
+.html {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 
-.body {
+.page {
   background-color: white;
 
   /* mobile viewport bug fix */
@@ -35,25 +35,25 @@
 }
 
 
-html {
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
-
-
-main {
+.main {
   max-width: 90rem;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
 
 
-section {
+.section {
   position: relative;
   min-height: 47rem;
   max-height: 68rem;
-  height: 100vh;
+  height:     100vh;
   text-align: center;
+}
+
+
+/* TODO: add navigation for descktop */
+.menu {
+  display: none;
 }
 
 
@@ -1050,7 +1050,7 @@ section {
     #NAVIGATION MOBILE
   \*------------------------------------*/ 
 
-  .body {
+  .page {
     padding-bottom: 6rem;
   }
 
