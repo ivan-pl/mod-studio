@@ -15,6 +15,7 @@
   <body class="page">
     <!--Compare with the layout-->
     <div class="layout-check"></div>
+    
     <nav class="menu">
       <a href="#main-page" class="menu__link"><span class="menu__text">Main page</span></a>
       <a href="#biography" class="menu__link"><span class="menu__text">Biography</span></a>
@@ -22,26 +23,29 @@
       <a href="#testimonials" class="menu__link"><span class="menu__text">Testimonials</span></a>
       <a href="#strong-points" class="menu__link"><span class="menu__text">Strong points</span></a>
     </nav>
+
     <main class="main">
-      <section id="main-page" class="section main-page">
-        <div class="main-title">
-          <h1>Atlas Studio</h1>
-          <h2>Modern Web Studio</h2>
+
+      <section id="main-page" class="main-page">
+        <div class="page-titles main-page__page_titles main-page__page_titles--mobile">
+          <h1 class="page-titles__main-header page-titles__main-header--mobile">Atlas Studio</h1>
+          <h2 class="page-titles__secondary-header page-titles__secondary-header--mobile">Modern Web Studio</h2>
         </div>
-        <picture class="main-image">
+        <picture class="main-page__main-image main-page__main-image--mobile">
           <source
             srcset="images/main-image-mobile.jpg"
             media="(max-width: 700px)"
           />
           <img
-            class="main-image"
+            class="main-page__main-image main-page__main-image--mobile"
             src="images/main-image.jpg"
             alt="The dooway and the flower pot"
           />
         </picture>
         <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
       </section>
-      <section id="biography" class="section biography">
+
+      <section id="biography" class="biography">
         <h2>Biography</h2>
         <!-- <div class="caption-top">&mdash; Creative studio</div> -->
         <picture class="biography-image">
@@ -71,7 +75,7 @@
         </div>
         <!-- <div class="caption-bottom">&mdash; Creative studio</div> -->
       </section>
-      <section id="designers" class="section designers">
+      <section id="designers" class="designers">
         <h2>Designers</h2>
         <div class="flex-container">
           <figure>
@@ -112,7 +116,7 @@
           </figure>
         </div>
       </section>
-      <section id="testimonials" class="section testimonials grid-container">
+      <section id="testimonials" class="testimonials grid-container">
         <h2>Testimonials</h2>
         <div class="flex-container-right">
           <blockquote>
@@ -142,7 +146,7 @@
           >
         </div>
       </section>
-      <section id="strong-points" class="section strong-points">
+      <section id="strong-points" class="strong-points">
         <h2>Strong points</h2>
         <article class="flex-container">
           <img

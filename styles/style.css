@@ -42,7 +42,11 @@
 }
 
 
-.section {
+.main-page,
+.biography,
+.designers,
+.testimonials,
+.strong-points {
   position: relative;
   min-height: 47rem;
   max-height: 68rem;
@@ -64,7 +68,49 @@
   #MAIN-PAGE DESKTOP
 \*------------------------------------*/
 
-.main-image {
+.page-titles {
+  font-size: 5rem;
+  text-align: center;
+  background-color: white;
+}
+
+  .page-titles__main-header {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+
+    white-space: nowrap;
+    font-size: 1.15em;
+    font-family: "Butler", sans-serif;
+    font-weight: 300;
+  }
+
+  .page-titles__secondary-header {
+    display: block;
+    position: relative;
+    top: 37%;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.25em;
+    font-weight: bold;
+  }
+
+
+.main-page__page_titles {
+  position: absolute;
+  top:     0;
+  right:   0;
+  bottom:  0;
+  left:    0;
+  z-index: 1;
+  width:   33rem;
+  height:  22rem;
+  margin:  auto;
+}
+
+.main-page__main-image {
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -76,44 +122,6 @@
   height: 60vw;
 }
 
-
-.main-title {
-  position: absolute;
-  background-color: white;
-  font-size: 5rem;
-  width: 33rem;
-  height: 22rem;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  margin: auto;
-  text-align: center;
-}
-
-
-.main-title h1 {
-  position: relative;
-  white-space: nowrap;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.15em;
-  font-family: "Butler", sans-serif;
-  font-weight: 300;
-  margin: 0;
-}
-
-
-.main-title h2 {
-  display: block;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.25em;
-  top: 37%;
-  font-weight: bold;
-  margin: 0;
-}
 
 
 /* .caption-bottom {
@@ -625,27 +633,20 @@
 
 
 
+
+
   /*------------------------------------*\
     #MAIN-PAGE MOBILE
   \*------------------------------------*/
 
-  .main-title {
+  .main-page__page_titles--mobile {
     top: 0;
     margin: 0;
     width: 100%;
     height: 45%;
   }
 
-  .main-title h1 {
-    font-size: 0.87em;
-    top: 68%;
-  }
-
-  .main-title h2 {
-    top: 69%;
-  }
-
-  .main-image {
+  .main-page__main-image--mobile {
     display: block;
     height: 100%;
     width: 100%;
@@ -655,18 +656,31 @@
     object-position: bottom center;
   }
 
+
+  .page-titles__main-header--mobile {
+    font-size: 0.87em;
+    top: 68%;
+  }
+
+  .page-titles__secondary-header--mobile {
+    top: 69%;
+  }
+
+
   @media (max-height: 700px) {
-    .main-image {
+    
+    .main-page__main-image--mobile {
         object-position: center;
       }
   
-      .main-title h1 {
-        top: 50%;
-      }
-  
-      .main-title h2 {
-        top: 56%;
-      }
+
+    .page-titles__main-header--mobile {
+      top: 50%;
+    }
+
+    .page-titles__secondary-header--mobile {
+      top: 56%;
+    }
   }
 
 
