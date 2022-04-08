@@ -1,0 +1,40 @@
+/*------------------------------------*\
+  #GENERAL SETTINGS
+\*------------------------------------*/
+
+:root {
+  font-size: 16px;
+}
+
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN-PAGE MOBILE
+\*------------------------------------*/
+
+.title-container {
+  height: 35%;
+}
+
+  .title-container h1 {
+    font-family: 'Butler', sans-serif;
+    font-size:   4.375rem;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .title-container h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size:   1.125rem;
+    font-weight: 500;
+  }
+
+  
