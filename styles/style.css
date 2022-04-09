@@ -806,58 +806,63 @@
     #DESIGNERS MOBILE
   \*------------------------------------*/
 
-  .designers h2 {
+  .designers__header {
     transform: none;
     right: 9%;
     top: 9%;
   }
 
-  .designers .flex-container {
+
+  .designers-container {
     overflow-y: visible;
     overflow-x: auto;
+    gap:        6%;
+  }
+
+
+  .designers__designers-container {
+    top:           20%;
     padding-right: 0;
-    padding-left: 8%;
-    gap: 6%;
-    top: 20%;
+    padding-left:  8%;
   }
 
-  .designers .flex-container figure img {
-    height: 440px;
-  }
+    .designers-container__item {
+      flex: 1 0 262px;
+    }
 
-  .designers .flex-container figure:first-child img {
-    height: 440px;
-    object-position: bottom center;
-  }
+      .designers-container__photo {
+        height: 440px;
+      }
 
-  .designers .flex-container figure {
-    flex: 1 0 262px;
-  }
 
-  .designers .flex-container figure:first-child {
+  .designers-container__item--big-size {
     flex: 1 0 262px;
     margin-right: 0;
     order: 3;
   }
 
-  .designers .flex-container figure:nth-child(3) figcaption {
-    width: fit-content;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    .designers-container__item--big-size .designers-container__photo {
+      height: 440px;
+      object-position: bottom center;
+    }
+
+    .designers-container__item--big-size .designers-container__caption {
+      position: static;
+      transform: none;
+    }
+
 
   @media (max-height: 700px) {
     .designers {
         min-height: 37rem;
       }
   
-      .designers .flex-container {
+      .designers__designers-container {
         top: 12%;
         min-height: 33rem;
       }
   
-      .designers h2 {
+      .designers__header {
         top: 4%;
       }
   }
