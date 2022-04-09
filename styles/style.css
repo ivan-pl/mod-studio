@@ -69,14 +69,14 @@
 \*------------------------------------*/
 
 .page-titles {
-  font-size: 5rem;
+  font-size:  5rem;
   text-align: center;
   background-color: white;
 }
 
   .page-titles__main-header {
-    position: relative;
-    top: 50%;
+    position:  relative;
+    top:       50%;
     transform: translateY(-50%);
     margin: 0;
 
@@ -87,10 +87,10 @@
   }
 
   .page-titles__secondary-header {
-    display: block;
+    display:  block;
     position: relative;
-    top: 37%;
-    margin: 0;
+    top:      37%;
+    margin:   0;
 
     font-family: "Roboto", sans-serif;
     font-size:   0.25em;
@@ -142,9 +142,9 @@
 \*------------------------------------*/
 
 .biography__header {
-  position: absolute;
-  bottom: 9.5%;
-  right:  3%;
+  position:  absolute;
+  bottom:    9.5%;
+  right:     3%;
   transform: rotate(-90deg);
 
   font-family: "Roboto", sans-serif;
@@ -155,14 +155,14 @@
 .biography__photo-wrap,
 .biography__text-wrap {
   position: relative;
-  width:  50%;
-  height: 100%;
+  width:    50%;
+  height:   100%;
   float: left;
 }
 
 .biography__photo {
-  display: block;
-  position: relative;
+  display:    block;
+  position:   relative;
   left:       19%;
   width:      77%;
   height:     auto;
