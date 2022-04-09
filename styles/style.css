@@ -271,96 +271,108 @@
   #DESIGNERS DESKTOP
 \*------------------------------------*/
 
-.designers h2 {
-  position: absolute;
+.designers__header {
+  position:  absolute;
+  right:     26%;
+  top:       13%;
   transform: rotate(-90deg);
   font-size: 1.15rem;
-  right: 26%;
-  top: 13%;
 }
 
 
 @media (max-width: 900px) {
-  .designers h2 {
+  .designers__header {
     right: 5%;
   }
 }
 
 
-.designers .flex-container {
-  display: flex;
-  height: 75%;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 2%;
+.designers__designers-container {
   position: relative;
-  top: 12%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  top:      12%;
 }
 
-.designers .flex-container figure {
-  text-align: left;
-  margin: 0;
-  height: 100%;
-  flex: 0 0 304px;
-  overflow: hidden;
+
+.designers-container {
+  display:         flex;
+  flex-flow:       row nowrap;
+  justify-content: flex-start;
+  align-items:     baseline;
+  gap:             2%;
+  overflow-x:      auto;
+  overflow-y:      hidden;
+
+  height: 75%;
 }
 
-.designers .flex-container figure img {
-  display: block;
-  width: 100%;
-  height: 65%;
-  object-fit: cover;
-  object-position: center bottom;
-  transition: 0.3s;
-}
+  .designers-container__item {
+    flex:     0 0 304px;
+    overflow: hidden;
+    text-align: left;
+    margin: 0;
+    height: 100%;
+  }
+
+    .designers-container__photo {
+      display: block;
+      width:   100%;
+      height:  65%;
+      object-fit:      cover;
+      object-position: center bottom;
+      transition: 0.3s;
+    }
+
+    .designers-container__caption {
+      max-height: 20%;
+    }
+
+      .designers-container__header {
+        font-family: "Roboto", sans-serif;
+        font-size:   1rem;
+        font-weight: 700;
+
+        margin:     0;
+        margin-top: 1.5rem;
+      }
+
+      .designers-container__from,
+      .designers-container__skills {
+        font-family: "Roboto", sans-serif;
+        font-size:   1rem;
+        font-weight: 400;
+
+        margin: 0;
+      }
+    
+  .designers-container__item--big-size {
+      flex: 0 0 608px;
+      margin-right: 6%;
+    }
+    
+    .designers-container__item--big-size > .designers-container__photo {
+      height: 80%;
+    }
+    
+    .designers-container__item--big-size > .designers-container__caption {
+      position:  relative;
+      left:      50%;
+      transform: translateX(-50%);
+      width: fit-content;
+    }
+    
 
 /* gallery animation */
-.designers .flex-container:hover figure img {
+.designers-container:hover .designers-container__photo {
   filter: grayscale(1);
 }
 
-.designers .flex-container figure:hover img {
-  filter: grayscale(0);
+.designers-container__item:hover .designers-container__photo {
+  filter:    grayscale(0);
   transform: scale(1.1) translateY(-5%);
 }
 
-.designers .flex-container figure figcaption {
-  max-height: 20%;
-}
 
-.designers .flex-container figure:first-child {
-  flex: 0 0 608px;
-  margin-right: 6%;
-}
 
-.designers .flex-container figure:first-child img {
-  height: 80%;
-}
-
-.designers .flex-container figure:first-child figcaption {
-  width: fit-content;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.designers figcaption p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.designers h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0;
-  margin-top: 1.5rem;
-}
 
 
 /*------------------------------------*\
