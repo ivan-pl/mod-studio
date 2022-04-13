@@ -382,135 +382,134 @@
 \*------------------------------------*/
 
 .testimonials {
-  display: flex;
-  flex-flow: row wrap;
+  display:         flex;
+  flex-flow:       row wrap;
   justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
+  align-items:     stretch;
+  align-content:   stretch;
 }
 
-.testimonials h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  width: 100%;
-  height: 16%;
-  display: flex;
+.testimonials__header {
+  display:     flex;
   align-items: flex-end;
-  padding-left: 12.5%;
+  width:  100%;
+  height: 16%;
+  padding-left:   12.5%;
   padding-bottom: 3%;
-  margin: 0;
+  margin:         0;
 }
 
-.testimonials .flex-container {
-  display: flex;
-  flex-flow: column nowrap;
+.testimonials__a-container {
+  display:         flex;
+  flex-flow:       column nowrap;
   justify-content: space-evenly;
-  align-items: end;
+  align-items:     end;
+  order:           1;
   width: 12%;
   padding-right: 2.5%;
-  order: 1;
 }
 
-.testimonials .flex-container a {
-  text-align: left;
-  flex: 0 1 11rem;
-  color: black;
+.testimonials__a-container-item {
+  font-family:     "Roboto", sans-serif;
+  text-align:      left;
+  color:         black;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight:     400;
+  font-size:       1rem;
+
+  flex: 0 1 11rem;
   transform: translateX(82%) rotate(-90deg);
 }
 
 @supports (writing-mode: vertical-rl) {
-  .testimonials .flex-container a {
+  .testimonials__a-container-item {
     transform: rotate(180deg);
     writing-mode: vertical-rl;
   }
 }
 
-.left-image {
-  width: 36%;
-  height: 84%;
-  object-fit: cover;
-  object-position: center center;
+.testimonials__photo {
   order: 2;
+  width:  36%;
+  height: 84%;
+  object-fit:      cover;
+  object-position: center center;
 }
 
-.flex-container-right {
-  display: flex;
-  flex-flow: nowrap column;
-  order: 3;
+.testimonials__quote-img-container {
+  display:    flex;
+  flex-flow:  nowrap column;
   align-self: center;
-  margin: auto;
-  padding-left: 5%;
+  order:      3;
+  margin:         auto;
+  padding-left:   5%;
   padding-bottom: 12%;
 }
 
-.testimonials blockquote {
+.testimonials__quote {
   font-family: "Butler", sans-serif;
   font-weight: 200;
-  font-size: 2rem;
-  width: 13rem;
+  font-size:   2rem;
+  
   justify-self: start;
-  align-self: start;
+  align-self:   start;
+  width:  13rem;
   margin: 0;
 }
 
-.right-image {
-  width: 14rem;
+.testimonials__img {
+  width:  14rem;
   height: auto;
-  object-fit: cover;
+  object-fit:      cover;
   object-position: center center;
-  margin: auto;
   padding-top: 16%;
+  margin:      auto;
 }
 
 @supports (display: grid) {
-  .testimonials h2 {
+  .testimonials__header {
     display: block;
-    width: auto;
-    height: auto;
-    grid-area: header;
+    grid-area:    header;
     justify-self: start;
-    align-self: end;
+    align-self:   end;
+    width:  auto;
+    height: auto;
     padding-bottom: 7%;
-    padding-left: 0;
+    padding-left:   0;
   }
 
   .testimonials {
-    display: grid;
+    display:               grid;
     grid-template-columns: 12% 1fr 1fr;
-    grid-template-rows: 16% repeat(3, 1fr);
+    grid-template-rows:    16% repeat(3, 1fr);
     grid-template-areas:
       ". header ."
-      "flex-container left-image flex-container-right"
-      "flex-container left-image flex-container-right"
-      "flex-container left-image flex-container-right";
+      "testimonials__a-container testimonials__photo testimonials__quote-img-container"
+      "testimonials__a-container testimonials__photo testimonials__quote-img-container"
+      "testimonials__a-container testimonials__photo testimonials__quote-img-container";
   }
 
-  .flex-container-right {
-    grid-area: flex-container-right;
-    padding-left: 0;
-    padding-right: 7%;
+  .testimonials__quote-img-container {
+    grid-area: testimonials__quote-img-container;
+    padding-left:   0;
+    padding-right:  7%;
     padding-bottom: 19%;
   }
 
-  .flex-container-right blockquote {
+  .testimonials__quote {
     margin-left: 4%;
   }
 
-  .testimonials .flex-container {
-    grid-area: flex-container;
+  .testimonials__a-container {
+    grid-area:    testimonials__a-container;
     justify-self: end;
-    padding-right: 22%;
     width: 100%;
+    padding-right: 22%;
   }
 
-  .left-image {
-    grid-area: left-image;
-    width: 100%;
+  .testimonials__photo {
+    grid-area: testimonials__photo;
+    width:  100%;
     height: 100%;
     padding-right: 17%;
   }
@@ -519,6 +518,9 @@
 .bold {
   font-weight: 700;
 }
+
+
+
 
 
 /*------------------------------------*\
@@ -844,7 +846,7 @@
   }
 
   @media (max-height: 700px) {
-    
+
     .designers {
         min-height: 37rem;
       }
@@ -874,107 +876,105 @@
     padding-top: 4%;
   }
 
-  .testimonials h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 100%;
-    display: flex;
-    order: 1;
+  .testimonials__header {
+    display:         flex;
     justify-content: flex-end;
+    order:           1;
+    width:         100%;
     padding-right: 10%;
   }
 
-  .testimonials .flex-container {
-    display: flex;
-    flex-flow: row wrap;
+  .testimonials__quote-img-container {
+    display:         flex;
+    flex-flow:       nowrap column;
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    width: 100%;
+    align-self:      center;
+    order:           2;
+    width:   100%;
+    height:  75%;
+    margin:  0;
+    padding: 22% 7% 0 7%;
+  }
+
+  .testimonials__a-container {
+    display:         flex;
+    flex-flow:       row wrap;
+    justify-content: space-between;
+    align-items:     flex-start;
+    align-content:   space-between;
+    justify-self:    self-end;
+    order:           3;
+    width:  100%;
     height: 13%;
-    order: 3;
-    padding: 0 7%;
-    justify-self: self-end;
+    padding:    0 7%;
     margin-top: auto;
   }
 
-  .testimonials .flex-container a {
-    text-align: left;
-    color: black;
+  .testimonials__a-container-item {
+    font-family:     "Roboto", sans-serif;
+    text-align:      left;
+    color:         black;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight:     400;
+    font-size:       1rem;
+    writing-mode:    unset;
+
     transform: none;
-    writing-mode: unset;
   }
 
-  .left-image {
+  .testimonials__photo {
     display: none;
   }
 
-  .flex-container-right {
-    display: flex;
-    flex-flow: nowrap column;
-    order: 2;
-    align-self: center;
-    width: 100%;
-    height: 75%;
-    margin: 0;
-    padding: 22% 7% 0 7%;
-    justify-content: space-between;
-  }
-
-  .testimonials blockquote {
+  .testimonials__quote {
     font-family: "Butler", sans-serif;
     font-weight: 200;
-    font-size: 2rem;
-    width: 94%;
-    justify-self: center;
+    font-size:   2rem;
+    width:  94%;
     margin: 0 auto;
+    justify-self: center;
   }
 
-  .right-image {
-    width: 100%;
+  .testimonials__img {
+    width:  100%;
     height: 58%;
-    margin: 0;
+    margin:  0;
     padding: 0;
-    object-fit: cover;
+    object-fit:      cover;
     object-position: center center;
   }
 
   @media (max-width: 410px) {
-    .testimonials .flex-container a {
+    .testimonials__a-container-item {
       font-size: 0.9rem;
       flex-basis: 9rem;
     }
   }
 
   @media (max-height: 700px) {
-    .testimonials h2 {
+    .testimonials__header {
         padding-bottom: 2%;
         padding-top: 2%;
       }
   
-      .flex-container-right {
-        padding-top: 0;
+      .testimonials__quote-img-container {
         justify-content: flex-start;
-        gap: 5%;
-        height: 80%;
-        overflow: hidden;
+        gap:             5%;
+        overflow:        hidden;
+        height:      80%;
+        padding-top: 0;
       }
   
-      .right-image {
+      .testimonials__img {
         height: 70%;
       }
   
-      .testimonials .flex-container a {
-        flex-basis: 9rem;
+      .testimonials__a-container-item {
         font-size: 0.9rem;
-        padding-bottom: 5%;
         transform: none;
+        flex-basis: 9rem;
         padding-bottom: 0%;
+        padding-bottom: 5%;
       }
   }
 
