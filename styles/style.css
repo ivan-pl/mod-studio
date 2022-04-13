@@ -47,7 +47,7 @@
 .designers,
 .testimonials,
 .strong-points {
-  position: relative;
+  position:   relative;
   min-height: 47rem;
   max-height: 68rem;
   height:     100vh;
@@ -68,37 +68,33 @@
   #MAIN-PAGE DESKTOP
 \*------------------------------------*/
 
-.page-titles {
-  font-size:  5rem;
-  text-align: center;
-  background-color: white;
+.main-page__main-header {
+  position:  relative;
+  top:       50%;
+  margin:    0;
+  transform: translateY(-50%);
+
+  white-space: nowrap;
+  font-size:   1.15em;
+  font-family: "Butler", sans-serif;
+  font-weight: 300;
 }
 
-  .page-titles__main-header {
-    position:  relative;
-    top:       50%;
-    transform: translateY(-50%);
-    margin: 0;
+.main-page__secondary-header {
+  display:  block;
+  position: relative;
+  top:      37%;
+  margin:   0;
 
-    white-space: nowrap;
-    font-size:   1.15em;
-    font-family: "Butler", sans-serif;
-    font-weight: 300;
-  }
-
-  .page-titles__secondary-header {
-    display:  block;
-    position: relative;
-    top:      37%;
-    margin:   0;
-
-    font-family: "Roboto", sans-serif;
-    font-size:   0.25em;
-    font-weight: bold;
-  }
-
+  font-family: "Roboto", sans-serif;
+  font-size:   0.25em;
+  font-weight: bold;
+}
 
 .main-page__page_titles {
+  font-size:  5rem;
+  text-align: center;
+
   position: absolute;
   top:     0;
   right:   0;
@@ -108,6 +104,7 @@
   width:   33rem;
   height:  22rem;
   margin:  auto;
+  background-color: white;
 }
 
 .main-page__main-image {
@@ -121,7 +118,6 @@
   height:     60vw;
   object-fit: cover;
 }
-
 
 /* .caption-bottom {
     position: absolute;
@@ -641,14 +637,14 @@
     #MAIN-PAGE MOBILE
   \*------------------------------------*/
 
-  .main-page__page_titles--mobile {
+  .main-page__page_titles {
     top: 0;
     margin: 0;
     width: 100%;
     height: 45%;
   }
 
-  .main-page__main-image--mobile {
+  .main-page__main-image {
     display: block;
     height: 100%;
     width: 100%;
@@ -659,12 +655,12 @@
   }
 
 
-  .page-titles__main-header--mobile {
+  .main-page__main-header {
     font-size: 0.87em;
     top: 68%;
   }
 
-  .page-titles__secondary-header--mobile {
+  .main-page__secondary-header {
     top: 69%;
   }
 
