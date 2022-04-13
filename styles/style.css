@@ -278,25 +278,17 @@
   position:  absolute;
   right:     26%;
   top:       13%;
-  transform: rotate(-90deg);
-  font-size: 1.15rem;
 }
 
-
 @media (max-width: 900px) {
+
   .designers__header {
     right: 5%;
   }
 }
 
 
-.designers__designers-container {
-  position: relative;
-  top:      12%;
-}
-
-
-.designers-container {
+.gallery {
   display:         flex;
   flex-flow:       row nowrap;
   justify-content: flex-start;
@@ -308,68 +300,75 @@
   height: 75%;
 }
 
-  .designers-container__item {
-    flex:     0 0 304px;
-    overflow: hidden;
-    text-align: left;
-    margin: 0;
-    height: 100%;
+.photo-block {
+  overflow: hidden;
+  text-align: left;
+  margin: 0;
+  height: 100%;
+}
+
+.gallery__photo-block {
+  flex:     0 0 304px;
+}
+
+.photo-block__img {
+  display: block;
+  width:   100%;
+  height:  65%;
+  object-fit:      cover;
+  object-position: center bottom;
+  transition: 0.3s;
+}
+
+.photo-block__caption {
+  max-height: 20%;
+}
+
+.photo-block__header {
+  font-family: "Roboto", sans-serif;
+  font-size:   1rem;
+  font-weight: 700;
+
+  margin:     0;
+  margin-top: 1.5rem;
+}
+
+.photo-block__from,
+.photo-block__skills {
+  font-family: "Roboto", sans-serif;
+  font-size:   1rem;
+  font-weight: 400;
+
+  margin: 0;
+}
+    
+.gallery__photo-block--big-size {
+    flex: 0 0 608px;
+    margin-right: 6%;
   }
-
-    .designers-container__photo {
-      display: block;
-      width:   100%;
-      height:  65%;
-      object-fit:      cover;
-      object-position: center bottom;
-      transition: 0.3s;
-    }
-
-    .designers-container__caption {
-      max-height: 20%;
-    }
-
-      .designers-container__header {
-        font-family: "Roboto", sans-serif;
-        font-size:   1rem;
-        font-weight: 700;
-
-        margin:     0;
-        margin-top: 1.5rem;
-      }
-
-      .designers-container__from,
-      .designers-container__skills {
-        font-family: "Roboto", sans-serif;
-        font-size:   1rem;
-        font-weight: 400;
-
-        margin: 0;
-      }
     
-  .designers-container__item--big-size {
-      flex: 0 0 608px;
-      margin-right: 6%;
-    }
+.gallery__photo-block--big-size > .photo-block__img {
+  height: 80%;
+}
     
-    .designers-container__item--big-size > .designers-container__photo {
-      height: 80%;
-    }
+.gallery__photo-block--big-size > .photo-block__caption {
+  position:  relative;
+  left:      50%;
+  transform: translateX(-50%);
+  width: fit-content;
+}
     
-    .designers-container__item--big-size > .designers-container__caption {
-      position:  relative;
-      left:      50%;
-      transform: translateX(-50%);
-      width: fit-content;
-    }
-    
+.designers__gallery {
+  position: relative;
+  top:      12%;
+}
 
 /* gallery animation */
-.designers-container:hover .designers-container__photo {
+.designers__gallery:hover .photo-block__img {
   filter: grayscale(1);
 }
 
-.designers-container__item:hover .designers-container__photo {
+.gallery__photo-block:hover .photo-block__img {
   filter:    grayscale(0);
   transform: scale(1.1) translateY(-5%);
 }
@@ -805,57 +804,52 @@
   \*------------------------------------*/
 
   .designers__header {
-    transform: none;
     right: 9%;
-    top: 9%;
+    top:   9%;
   }
 
-
-  .designers-container {
+  .gallery {
     overflow-y: visible;
-    overflow-x: auto;
     gap:        6%;
   }
 
-
-  .designers__designers-container {
+  .designers__gallery {
     top:           20%;
     padding-right: 0;
     padding-left:  8%;
   }
 
-    .designers-container__item {
-      flex: 1 0 262px;
-    }
-
-      .designers-container__photo {
-        height: 440px;
-      }
-
-
-  .designers-container__item--big-size {
+  .gallery__photo-block {
     flex: 1 0 262px;
-    margin-right: 0;
-    order: 3;
   }
 
-    .designers-container__item--big-size .designers-container__photo {
-      height: 440px;
-      object-position: bottom center;
-    }
+  .photo-block__img {
+    height: 440px;
+  }
 
-    .designers-container__item--big-size .designers-container__caption {
-      position: static;
-      transform: none;
-    }
+  .gallery__photo-block--big-size {
+    flex: 1 0 262px;
+    order: 3;
+    margin-right: 0;
+  }
 
+  .gallery__photo-block--big-size .photo-block__img {
+    height: 440px;
+    object-position: bottom center;
+  }
+
+  .gallery__photo-block--big-size .photo-block__caption {
+    position: static;
+    transform: none;
+  }
 
   @media (max-height: 700px) {
+    
     .designers {
         min-height: 37rem;
       }
   
-      .designers__designers-container {
+      .gallery__photo-block {
         top: 12%;
         min-height: 33rem;
       }
