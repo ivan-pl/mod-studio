@@ -266,6 +266,17 @@
     color: #8C8888;
 } */
 
+@media (max-width: 1000px) {
+  
+  .biography__text-wrap {
+    padding-top: 0;
+  }
+
+  .biography__name {
+    margin-top: 0;
+  }
+}
+
 
 
 
