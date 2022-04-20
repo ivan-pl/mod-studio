@@ -18,7 +18,7 @@
 
 
 /*------------------------------------*\
-  #MAIN-PAGE MOBILE
+  #MAIN-PAGE
 \*------------------------------------*/
 
 .title-container {
@@ -85,4 +85,51 @@
     font-weight: 700;
   }
 
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BIOGRAPHY
+\*------------------------------------*/
+
+.biography__skills {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size:   1.125rem;
+  color:     #636363;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size:   1.125rem;
+}
+
+.biography__blockquote {
+  font-family: 'Butler', sans-serif;
+  font-weight: 200;
+  font-size:   2rem;
+
+  padding-top: 15%;
+}
+
+.biography__name {
+  font-family: 'Butler', sans-serif;
+  font-weight: 300;
+  font-size:   4.5rem;
+  white-space: nowrap;
+}
+
+.biography__image-wrap {
+  flex: 1 1 50px;
+}
+
+.biography__image {
+  width:  100%;
+  height: 100%;
+  object-fit:      cover;
+  object-position: center;
 }
