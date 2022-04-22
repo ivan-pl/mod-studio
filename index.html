@@ -62,18 +62,24 @@
       </section>
       
 
-      <section class="testimonials d-flex flex-column flex-nowrap">
-
+      <section class="testimonials d-flex  flex-column flex-md-row flex-nowrap" >
+        
         <h2 class="header testimonials__header">Testimonials</h2>
 
-        <blockquote class="testimonials__blockquote">I just really want to do good work and work with some great people, people who challange me.</blockquote>
-        
-        <img class="testimonials__quote-image" src="images/testimonials_2.jpg" alt="Person holding white and red plaid tote bag">
+        <div class="testimonials__quote-container col-md-5 d-flex flex-column order-md-3">
+          <blockquote class="testimonials__blockquote d-md-flex align-items-md-end">I just really want to do good work and work with some great people, people who challange me.</blockquote>
+          <img class="testimonials__quote-image" src="images/testimonials_2.jpg" alt="Person holding white and red plaid tote bag">
+        </div>
 
-        <div class="testimonials__container d-flex flex-wrap">
-          <a class="anchor col-6" href="www.whitepapers.com"><span class="bold">Website</span> www.whitepapers.com</a>
-          <a class="anchor col-6" href="www.whitepapers.com"><span class="bold">Creativity</span> www.whitepapers.com</a>
-          <a class="anchor col-6" href="www.whitepapers.com"><span class="bold">Creativity</span> www.whitepapers.com</a>
+        <img class="testimonials__image d-none d-md-block order-md-2" 
+             src="images/testimonials_1.jpg" 
+             alt="Brown wooden kitchen cupboard near wall"
+        >
+
+        <div class="testimonials__container col-md d-flex flex-md-column flex-wrap order-md-1 align-items-md-center">
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Website</span><br class="d-none d-md-block">www.whitepapers.com</a>
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br class="d-none d-md-block">www.whitepapers.com</a>
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br class="d-none d-md-block">www.whitepapers.com</a>
         </div>
 
       </section>
