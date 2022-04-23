@@ -15,8 +15,7 @@
   </head>
   <body class="bg-white">
     <main class="main bg-white">
-      <!-- TODO: delete d-none -->
-      <section class="main-page d-none d-flex flex-column vh-100 p-0">
+      <section class="main-page d-flex flex-column vh-100 p-0">
 
         <div class="d-flex flex-column text-center title-container bg-white align-self-center justify-content-end">
             <h1 class="main-title">Atlas Studio</h1>
@@ -28,8 +27,7 @@
       </section>
 
 
-      <!-- TODO: delete d-none -->
-      <section class="d-none biography d-flex flex-column flex-nowrap vh-100 p-0 flex-md-row">
+      <section class="biography d-flex flex-column flex-nowrap vh-100 p-0 flex-md-row">
 
         <div  class="container-fluid px-2 pt-3 m-0 col-md-6 order-md-2 d-md-flex flex-md-column ps-md-5">
 
@@ -71,15 +69,17 @@
           <img class="testimonials__quote-image" src="images/testimonials_2.jpg" alt="Person holding white and red plaid tote bag">
         </div>
 
-        <img class="testimonials__image d-none d-md-block order-md-2" 
-             src="images/testimonials_1.jpg" 
-             alt="Brown wooden kitchen cupboard near wall"
-        >
+        <div class="testimonials__image-wrap d-none d-md-block order-md-2 col-md-5">
+          <img class="testimonials__image" 
+          src="images/testimonials_1.jpg" 
+          alt="Brown wooden kitchen cupboard near wall"
+     >
+        </div>
 
-        <div class="testimonials__container col-md d-flex flex-md-column flex-wrap order-md-1 align-items-md-center">
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Website</span><br class="d-none d-md-block">www.whitepapers.com</a>
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br class="d-none d-md-block">www.whitepapers.com</a>
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br class="d-none d-md-block">www.whitepapers.com</a>
+        <div class="testimonials__container col-md d-flex flex-md-column flex-wrap order-md-1 align-items-md-end">
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Website</span><br>www.whitepapers.com</a>
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br>www.whitepapers.com</a>
+          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br>www.whitepapers.com</a>
         </div>
 
       </section>
