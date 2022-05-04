@@ -11,7 +11,7 @@
   <body class="bg-white">
     <main class="my-0 mx-auto max-w-[1440px] min-w-[370px] bg-white">
       
-      <section class="h-screen relative flex flex-col h-screen md:min-h-[500px]">
+      <section class="h-screen relative flex flex-col h-screen min-h-[700px]">
 
         <div class="flex flex-col text-center h-2/5 bg-white self-center justify-end md:absolute md:bottom-1/2 md:right-1/2 md:z-10 md:translate-x-1/2 md:translate-y-1/2 md:w-fit md:h-fit md:py-24 md:px-16">
             <h1 class="main-title md:self-center">Atlas Studio</h1>
@@ -23,7 +23,7 @@
       </section>
 
 
-      <section class="biography flex flex-col flex-nowrap h-screen md:flex-row relative">
+      <section class="biography flex flex-col flex-nowrap h-screen md:flex-row relative min-h-[700px]">
 
         <div class="pt-8 px-4 md:order-2 md:basis-1/2 md:flex md:flex-col md:pr-[10%]">
           <div class="flex md:order-2 md:pt-[8%]">
@@ -31,12 +31,12 @@
             <h2 class="header header--vertical ml-auto md:absolute md:bottom-[5%] md:right-[3%]">Biography</h2>
           </div>
     
-          <blockquote class="biography__blockquote pt-[15%] md:order-3 md:pt-[10%] lg:pr-[20%]">
+          <blockquote class="biography__blockquote pt-[15%] md:order-3 md:pt-[10%] xl:pr-[20%]">
             <hr class="hidden md:block md:w-4 md:h-1">
             “The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”
           </blockquote>
   
-          <h3 class="biography__name text-center translate-y-6 lg:mt-[20%] md:order-1 md:text-left"><span class="md:hidden">-</span>Katya<br class="hidden md:block"> Mills</h3>
+          <h3 class="biography__name text-center translate-y-6 xl:mt-[20%] md:order-1 md:text-left"><span class="md:hidden">-</span>Katya<br class="hidden md:block"> Mills</h3>
         </div>
         
         <div class="grow shrink basis-16 overflow-hidden md:order-1 md:basis-1/2 md:pl-[5%] md:pr-[3%] md:pt-[3%]">
@@ -50,26 +50,26 @@
       </section>
       
 
-      <section class="hidden testimonials d-flex  flex-column flex-md-row flex-nowrap" >
+      <section class="testimonials h-screen relative flex flex-col h-screen min-h-[700px] flex-nowrap px-[5%] md:flex-row md:pt-[8%] md:pl-[1%]" >
         
-        <h2 class="header testimonials__header">Testimonials</h2>
+        <h2 class="header self-end mt-[2%] md:absolute md:left-[10%] md:top-[3%]">Testimonials</h2>
 
-        <div class="testimonials__quote-container col-md-5 d-flex flex-column order-md-3">
-          <blockquote class="testimonials__blockquote d-md-flex align-items-md-end">I just really want to do good work and work with some great people, people who challange me.</blockquote>
-          <img class="testimonials__quote-image" src="images/testimonials_2.jpg" alt="Person holding white and red plaid tote bag">
+        <div class="flex flex-col grow h-[10%] md:order-3 md:shrink-0 md:w-2/5 md:h-full md:pl-[18%] md:pr-[5%] md:pb-[3%] lg:pr-[10%] lg:pb-[7%]">
+          <blockquote class="testimonials__blockquote text-center pt-[10vh] pb-[5vh] md:grow md:py-0 md:grow-0 md:pb-4">I just really want to do good work and work with some great people, people who challange me.</blockquote>
+          <img class="w-full h-[10%] object-cover object-center grow md:h-1/2 md:overflow-hidden" src="images/testimonials_2.jpg" alt="Person holding white and red plaid tote bag">
         </div>
 
-        <div class="testimonials__image-wrap d-none d-md-block order-md-2 col-md-5">
-          <img class="testimonials__image" 
+        <div class="hidden md:block md:order-2 md:w-2/5">
+          <img class="w-full h-full object-cover object-center" 
           src="images/testimonials_1.jpg" 
           alt="Brown wooden kitchen cupboard near wall"
-     >
+          >
         </div>
 
-        <div class="testimonials__container col-md d-flex flex-md-column flex-wrap order-md-1 align-items-md-end">
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Website</span><br>www.whitepapers.com</a>
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br>www.whitepapers.com</a>
-          <a class="anchor anchor--vertical col-6 col-md" href="www.whitepapers.com"><span class="bold">Creativity</span><br>www.whitepapers.com</a>
+        <div class="flex md:flex-col flex-wrap md:order-1 md:items-center lg:items-end md:w-[10%] md:h-full md:shrink-0 md:grow-0 md:justify-evenly">
+          <a class="anchor anchor--vertical pt-[2vh] w-1/2" href="www.whitepapers.com"><span class="font-bold">Website</span><br>www.whitepapers.com</a>
+          <a class="anchor anchor--vertical pt-[2vh] w-1/2" href="www.whitepapers.com"><span class="font-bold">Creativity</span><br>www.whitepapers.com</a>
+          <a class="anchor anchor--vertical pt-[2vh] w-1/2" href="www.whitepapers.com"><span class="font-bold">Creativity</span><br>www.whitepapers.com</a>
         </div>
 
       </section>

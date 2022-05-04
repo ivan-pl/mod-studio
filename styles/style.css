@@ -7,21 +7,6 @@
 }
 
 
-.biography,
-.testimonials {
-  height: 100vh;
-  position: relative;
-}
-
-@media (min-width: 728px) {
-
-  section {
-    min-height: 728px;
-  }
-  
-}
-
-
 
 
 
@@ -111,42 +96,10 @@
   #TESTIMONIALS
 \*------------------------------------*/
 
-.testimonials {
-  padding: 0 5%;
-}
-
-.testimonials__header {
-  align-self: flex-end;
-  margin-top: 2%;
-}
-
 .testimonials__blockquote {
   font-family: 'Butler', sans-serif;
   font-weight: 200;
   font-size:   2rem;
-  text-align:  center;
-
-  padding-top:    10vh;
-  padding-bottom: 5vh;
-
-  flex: 0 1 auto;
-}
-
-.testimonials__quote-image {
-  flex: 1 1 auto;
-  object-fit:      cover;
-  object-position: center;
-  width:  100%;
-  height: 10%;
-}
-
-.testimonials__quote-container {
-  flex: 1 1 auto;
-  height: 10%;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 .anchor {
@@ -155,82 +108,13 @@
   font-size:   1rem;
   color:     black;
   text-decoration: none;
-
-  padding-top: 2vh;
 }
 
 
 @media (min-width: 768px) {
 
-  .testimonials {
-    padding-top:  8%;
-    padding-left: 1%;
-  }
-
-  .testimonials__header {
-    position: absolute;
-    left:     10%;
-    top:      3%;
-  }
-
-  .testimonials__container {
-    flex: 1 0 auto;
-  }
-
   .anchor--vertical {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
   }
-
-  .testimonials__image {
-    object-fit:      cover;
-    object-position: center;
-    width:  100%;
-    height: 100%;
-  }
-
-  .testimonials__quote-container {
-    height:         100%;
-    padding-left:   10%;
-    padding-right:  3%;
-    padding-bottom: 7%;
-
-    flex: 1 0 auto;
-  }
-
-  .testimonials__blockquote {
-    flex: 1 1 50%;
-    height: 50%;
-  }
-
-  .testimonials__quote-image {
-    flex: 1 1 50%;
-    height: 50%;
-  }
-
-}
-
-@media (min-width: 992px) {
-
-  .testimonials__quote-container {
-    padding-left: 15%;
-  }
-
-  .testimonials__blockquote {
-    padding: 0 10%;
-  }
-
-}
-
-@media (min-width: 1200px) {
-
-  .testimonials__quote-container {
-    padding-left:  23%;
-    padding-right: 5%;
-  }
-
-  .testimonials__blockquote {
-    padding: 0 6%;
-  }
-
 }
