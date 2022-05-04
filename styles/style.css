@@ -131,3 +131,23 @@
     transform: rotate(180deg);
   }
 }
+
+
+
+
+/*------------------------------------*\
+  #STRONG-POINTS
+\*------------------------------------*/
+
+.list-block__header {
+  font-family: 'Butler', sans-serif;
+  font-size: 5.75rem;
+  font-weight: 300;
+}
+
+.list-block__item {
+  font-family: 'Butler', sans-serif;
+  font-size: 2.125rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
