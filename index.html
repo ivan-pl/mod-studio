@@ -18,38 +18,32 @@
             <h2 class="secondary-title pt-6 pb-4 md:absolute md:bottom-0 md:inset-x-0">Modern Web Studio</h2>
         </div>
 
-        <img class="w-full h-3/5 object-cover object-center md:absolute md:inset-0 md:m-auto md:max-w-[1100px] md:max-h-[700px] md:min-h-[500px]" src="images/main-image.jpg" alt="Black and brown leather padded tub sofa">
+        <img class="w-full h-3/5 object-cover object-center md:absolute md:inset-0 md:m-auto md:max-w-[1100px] md:max-h-[700px] md:min-h-[500px] md:h-4/5" src="images/main-image.jpg" alt="Black and brown leather padded tub sofa">
 
       </section>
 
 
-      <section class="hidden biography d-flex flex-column flex-nowrap vh-100 p-0 flex-md-row">
+      <section class="biography flex flex-col flex-nowrap h-screen md:flex-row relative">
 
-        <div  class="container-fluid px-2 pt-3 m-0 col-md-6 order-md-2 d-md-flex flex-md-column ps-md-5">
-
-          <div class="row m-0 order-md-2">
-            <p class="col biography__skills ">Art Director <br> Scenography / <br class="d-md-none">Styling / <br class="d-md-none">Creative Photography / <br class="d-md-none">Design</p>
-            <h2 class="col-auto text-end header header--vertical biography__header">Biography</h2>
+        <div class="pt-8 px-4 md:order-2 md:basis-1/2 md:flex md:flex-col md:pr-[10%]">
+          <div class="flex md:order-2 md:pt-[8%]">
+            <p class="biography__skills">Art Director <br> Scenography / <br class="md:hidden">Styling / <br class="md:hidden">Creative Photography / <br class="md:hidden">Design</p>
+            <h2 class="header header--vertical ml-auto md:absolute md:bottom-[5%] md:right-[3%]">Biography</h2>
           </div>
+    
+          <blockquote class="biography__blockquote pt-[15%] md:order-3 md:pt-[10%] lg:pr-[20%]">
+            <hr class="hidden md:block md:w-4 md:h-1">
+            “The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”
+          </blockquote>
   
-          <div class="row m-0 order-md-3">
-            <blockquote class="biography__blockquote m-0">
-            <hr class="d-none d-md-block biography__quote-break bg-dark opacity-100">
-              “The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”
-            </blockquote>
-          </div>
-
-          <div class="row m-0 order-md-1">
-            <h3 class="biography__name text-center p-0 text-md-start"><span class="d-md-none">-</span>Katya<br class="d-none d-md-block"> Mills</h3>
-          </div>
-
+          <h3 class="biography__name text-center translate-y-6 lg:mt-[20%] md:order-1 md:text-left"><span class="md:hidden">-</span>Katya<br class="hidden md:block"> Mills</h3>
         </div>
-
-        <div class="biography__image-wrap col-md-6 order-md-1">
+        
+        <div class="grow shrink basis-16 overflow-hidden md:order-1 md:basis-1/2 md:pl-[5%] md:pr-[3%] md:pt-[3%]">
           <img 
             src="images/biography-image.jpg" 
             alt="The girl walks barefoot on the sand"
-            class="biography__image"  
+            class="w-full h-full object-cover object-center"  
           >
         </div>
 
