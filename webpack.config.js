@@ -13,15 +13,23 @@ module.exports = {
     rules: [
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: false,
-            },
-          },
-        ],
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(jpg|png)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'image/[name][ext]'
+        }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
       },
     ]
   },
