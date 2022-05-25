@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /**
- * The site has desktop and mobile versions. Swithing at mobile version occurs
+ * The site has desktop and mobile versions. Switching at mobile version occurs
  * at 700px. Also, it has fallbacks (grid to flex and writing-mode to 
  * transform).
  */
@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-/* TODO: add navigation for descktop */
+/* TODO: add navigation for desktop */
 .menu {
   display: none;
 }
