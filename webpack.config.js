@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
+    clean: true,
   },
   module: {
     rules: [
@@ -34,10 +35,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   devServer: {
     compress: false,
     open: "/",
