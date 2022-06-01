@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
@@ -33,7 +34,7 @@ module.exports = {
         test: /\.(jpg|png)$/,
         type: "asset/resource",
         generator: {
-          filename: "image/[name][ext]",
+          filename: "images/[name][ext]",
         },
       },
       {
@@ -49,6 +50,16 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html" }),
     new MiniCssExtractPlugin(),
+    new ImageMinimizerPlugin({
+      minimizer: {
+        // Implementation
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        // Options
+        options: {
+          plugins: ["imagemin-mozjpeg", "imagemin-pngquant"],
+        },
+      },
+    }),
   ],
   devServer: {
     compress: false,
