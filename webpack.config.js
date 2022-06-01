@@ -27,11 +27,9 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /fonts.*\.+(woff|woff2|eot|ttf|otf|svg)$/i,
         type: "asset/resource",
-        generator: {
-          filename: "fonts/[name][ext]",
-        },
+        generator: { filename: "fonts/[name][ext]" },
       },
     ],
   },
