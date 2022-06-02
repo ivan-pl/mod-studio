@@ -10,7 +10,7 @@ module.exports = {
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "main.[contenthash].js",
     clean: true,
   },
   module: {
@@ -34,7 +34,7 @@ module.exports = {
         test: /\.(jpg|png)$/,
         type: "asset/resource",
         generator: {
-          filename: "images/[name][ext]",
+          filename: "images/[name].[contenthash][ext]",
         },
       },
       {
@@ -49,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
     new ImageMinimizerPlugin({
       minimizer: {
         // Implementation
