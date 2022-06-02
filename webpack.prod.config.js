@@ -7,7 +7,7 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.[contenthash].js",
@@ -52,18 +52,11 @@ module.exports = {
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
     new ImageMinimizerPlugin({
       minimizer: {
-        // Implementation
         implementation: ImageMinimizerPlugin.imageminMinify,
-        // Options
         options: {
           plugins: ["imagemin-mozjpeg", "imagemin-pngquant"],
         },
       },
     }),
   ],
-  devServer: {
-    compress: false,
-    open: "/",
-    port: 3001,
-  },
 };
