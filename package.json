@@ -56,6 +56,6 @@
     "webpack-dev-server": "^4.9.0"
   },
   "lint-staged": {
-    "*.{js,css,md,json}": "prettier --write"
+    "*.{js,css,md,json,html}": "prettier --write"
   }
 }
