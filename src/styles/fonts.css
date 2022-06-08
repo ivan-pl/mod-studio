@@ -8,6 +8,7 @@
   font-weight: 400;
   src: local("Butler"), url("../fonts/Butler.woff2") format("woff2"),
     url("../fonts/Butler.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
   font-weight: 300;
   src: local("ButlerLight"), url("../fonts/Butlerlight.woff2") format("woff2"),
     url("../fonts/Butlerlight.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -25,6 +27,7 @@
   src: local("Butler UltraLight"), local("Butler-UltraLight"),
     url("../fonts/Butlerultralight.woff2") format("woff2"),
     url("../fonts/Butlerultralight.woff") format("woff");
+  font-display: swap;
 }
 
 /*------------------------------------*\
@@ -38,6 +41,7 @@
     url("../fonts/Robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -47,6 +51,7 @@
     url("../fonts/Robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,4 +61,5 @@
     url("../fonts/Roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
