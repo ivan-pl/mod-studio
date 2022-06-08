@@ -1061,6 +1061,5 @@
 
   .menu__link:nth-child(5)::after {
     content: "S";
-    text-decoration: underline;
   }
 }
