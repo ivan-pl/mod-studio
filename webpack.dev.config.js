@@ -1,20 +1,29 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["./src/index.js", "./src/index_dev.js"],
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
     clean: true,
   },
+  devtool: "eval-source-map",
   module: {
     rules: [
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
-      { test: /\.(js)$/, use: "babel-loader" },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
       {
         test: /\.html$/i,
         loader: "html-loader",
@@ -23,7 +32,7 @@ module.exports = {
         test: /\.(jpg|png)$/,
         type: "asset/resource",
         generator: {
-          filename: "image/[name][ext]",
+          filename: "images/[name][ext]",
         },
       },
       {
@@ -36,7 +45,6 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   devServer: {
     compress: false,
-    open: "/",
     port: 3001,
   },
 };
