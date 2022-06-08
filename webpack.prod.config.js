@@ -7,10 +7,10 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "main.[contenthash].js",
     clean: true,
   },
   module: {
@@ -34,7 +34,7 @@ module.exports = {
         test: /\.(jpg|png)$/,
         type: "asset/resource",
         generator: {
-          filename: "images/[name][ext]",
+          filename: "images/[name].[contenthash][ext]",
         },
       },
       {
@@ -49,21 +49,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
     new ImageMinimizerPlugin({
       minimizer: {
-        // Implementation
         implementation: ImageMinimizerPlugin.imageminMinify,
-        // Options
         options: {
           plugins: ["imagemin-mozjpeg", "imagemin-pngquant"],
         },
       },
     }),
   ],
-  devServer: {
-    compress: false,
-    open: "/",
-    port: 3001,
-  },
 };

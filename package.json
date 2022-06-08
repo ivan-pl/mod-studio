@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production",
-    "start": "webpack serve --open",
+    "build": "webpack --config webpack.prod.config.js",
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack serve --open --config webpack.dev.config.js",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
     "prepare": "husky install"
@@ -22,16 +23,18 @@
   "bugs": {
     "url": "https://github.com/ivan-pl/otus-css-pleskanev/issues"
   },
-  "homepage": "https://github.com/ivan-pl/otus-css-pleskanev#readme",
+  "homepage": "https://ivan-pl.github.io/otus-css-pleskanev/",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",

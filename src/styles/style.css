@@ -579,26 +579,6 @@
   font-size: 2.1rem;
 }
 
-/* Наложение макета */
-.layout-check {
-  display: none;
-  width: 1440px;
-  height: 4559px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  background: url(../images/MacBook\ Pro\ -\ 1.png) no-repeat center;
-  opacity: 0.5;
-  z-index: 2;
-}
-
-/* Заглушка для отключений ненужных секций */
-/* section:nth-child(n+5) {
-    display: none;
-} */
-
 @media (max-width: 700px) {
   section {
     min-width: 22.5rem;
@@ -1063,24 +1043,4 @@
     content: "S";
     text-decoration: underline;
   }
-
-  /* Наложение макета */
-  .layout-check {
-    /* display: block; */
-    width: 428px;
-    height: 4641px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background: url(../images/iPhone\ 13\ Pro\ Max\ -\ 1.jpg) no-repeat center;
-    opacity: 0.5;
-    z-index: 2;
-  }
-
-  /* Заглушка для отключений ненужных секций */
-  /* section:nth-child(n+6) {
-        display: none;
-    } */
 }
