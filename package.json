@@ -1,5 +1,5 @@
 {
-  "name": "otus-css-pleskanev",
+  "name": "studio-website",
   "version": "1.0.0",
   "description": "Website of the Modern Web Studio.",
   "main": "index.js",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivan-pl/otus-css-pleskanev.git"
+    "url": "git+https://github.com/ivan-pl/studio-website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivan-pl/otus-css-pleskanev/issues"
+    "url": "https://github.com/ivan-pl/studio-website/issues"
   },
-  "homepage": "https://ivan-pl.github.io/otus-css-pleskanev/",
+  "homepage": "https://ivan-pl.github.io/studio-website/",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
